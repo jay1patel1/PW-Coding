@@ -1,0 +1,13 @@
+> Question - 2
+   Explain the purpose of comments in HTML and provide an example of how to use comments in an HTML document?
+   - HTML comments are used when we want to add some text inside it but do not want to render it. This comments are generally used to communicate with any developer who is reading or evaluating the code.
+   - Example:
+   - HTML Code
+   - <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> -->
+> Question - 4
+   Write a short note on Tag and element with an example?
+   - generally HTML tags are enclosed with (<>) this tags are help the browser to understand the structure of the HTML for example <h1> tag helps to browser understand this is the most important part of the html heading 1.
+   - moreover, (<>) is the starting tag and  (</>) is the closing tag. the purpose of closing tag is to make browser understand that the given structure is for the given part only.
+> Question - 5
+   What is the DOCTYPE Declaration in HTML?
+   - the doctype helps browser to understand this is the HTML file for example how browser can Identify this is the HTML file or PDF file. moreover it also inform the browser that what HTML format we are using. moreover doctype is also type of the tag.  
