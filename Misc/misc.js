@@ -1,6 +1,14 @@
-let a = 5.21
-console.log(a);
+/*
+This program
+will calculate 2 values
+and give you the answer
+*/
+let value1 = 0;
+let value2 = 0; 
 
-let c = a+4.22345678;
-console.log(c);
-console.log(typeof c);
+value1 = 10;
+value2 = 20;
+
+let Answer = value1 + value2;
+
+console.log(Answer);
