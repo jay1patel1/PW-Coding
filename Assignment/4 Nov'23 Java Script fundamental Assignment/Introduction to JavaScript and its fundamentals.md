@@ -104,6 +104,5 @@ Let b = Patel;
 // Good at readability
 Let userFirstName = Jay;
 Let userLastName = Jay;
-
 ```
 
