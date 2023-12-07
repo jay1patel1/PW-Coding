@@ -32,13 +32,8 @@ function checkOddOrEven (inputNumber) {
     //  Print the message if it is number 
     console.log(
         value.isnumber
-            ? console.log(evenOddCheck)
-            : console.log("Enter correct value"));
+            ? evenOddCheck
+            : "Enter correct value");
 }
 
 checkOddOrEven(56);
-
-
-
-
-
