@@ -58,14 +58,14 @@
         - **For example:**
             ```javascript
                 let age = 65;
+                let siniorcitzenage = 60 // Sinior citizenage limit
                 let discount;
 
-                if (age >= 60) {
-                    discount = "Senior discount applied";
-                } else {
-                    discount = "No discount";
-                }; // Ternary operators
+                let willgetdiscount = age >= siniorcitzenage ? "Relase coupen" : "No discount"; // ternary operator
+
+                console.log(willgetdiscount); // Ternary operators
             ```
+    - also note than in javascript this the only ternary operators there are no other ternary operators apart from this. 
 
 ## Q4.  Discuss the precedence and associativity of operators in JavaScript. Why is understanding these concepts important?
 
