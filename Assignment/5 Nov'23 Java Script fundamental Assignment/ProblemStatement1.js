@@ -13,27 +13,29 @@ function checkOddOrEven (inputNumber) {
         isnumber: true,
         remainder: 0,
     }
-
+  
     // Check if the given value is a number and Calculate remainder
     let numberValueCheck =
         typeof value.value !== "number" 
             ? ((value.isnumber = false), "Given value is not a number")
             : ((value.isnumber = true), value.remainder = value.value%2, "Processing to check if value is even or odd");
-
+  
     // Print Status
     console.log(numberValueCheck);
-    
+  
     // Check it is even or odd and declare the result
     let evenOddCheck = 
         value.remainder > 0
             ? (`Given value ${value.value} is odd`)
             : (`Given value ${value.value} is even`)
-    
+  
     //  Print the message if it is number 
     console.log(
         value.isnumber
             ? evenOddCheck
             : "Enter correct value");
-}
-
-checkOddOrEven(56);
+  }
+  
+  checkOddOrEven(56);
+  checkOddOrEven(57);
+  checkOddOrEven("58");
