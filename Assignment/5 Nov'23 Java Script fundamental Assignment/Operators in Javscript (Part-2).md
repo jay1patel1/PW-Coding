@@ -64,4 +64,3 @@
 ### use ternary operator to check that a person in eligible to vote or not by checking his age. if the age of the person is less that 18 then "You cannot vote" should be logged else "You can vote" should be logged.
 ``` javascript
 ```
-df
