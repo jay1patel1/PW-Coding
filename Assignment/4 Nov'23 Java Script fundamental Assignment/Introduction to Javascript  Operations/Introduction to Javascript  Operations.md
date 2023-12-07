@@ -63,7 +63,7 @@
 
                 let willgetdiscount = age >= siniorcitzenage ? "Relase coupen" : "No discount"; // ternary operator
 
-                console.log(willgetdiscount); // Ternary operators
+                console.log(willgetdiscount);
             ```
     - also note than in javascript this the only ternary operators there are no other ternary operators apart from this. 
 
@@ -84,3 +84,73 @@
         ```
         as per associativity code will go always left to right it will calculate (10+2) + 2 + 4 + 6; and like that. it will always goes left to right. again it helps to know what will be calculate first. 
 
+## Q5.  Write a JavaScript program that calculates the simple interest using the formula Simple interest = (principal * rate * time) / 100.
+- **Code**
+    ```Javascript
+        let intrestcalculator = function (principal, rate, time) {
+            if (
+                typeof principal !== "number" ||
+                typeof rate !== "number" ||
+                typeof time !== "number" ||
+                rate < 0 ||
+                rate > 15
+            ) {
+                return "Invalid input";
+            } else {
+                let interest = (principal * rate * time) / 100;
+                return interest;
+            }
+        };
+
+        //  Units: Principal = INR, Rate = %, Time = Year
+
+        console.log(intrestcalculator(534000, 15, 2));
+
+    ```
+- **Result**
+    ```Javascript
+    160200
+    ```
+## Q6.  Write a Javascript program to calculate the Body Mass Index (BMI) using the formula BMI = weight (kg)/height * height.
+- **Code**
+    ```Javascript
+        let bMIcalculator = function (weight, height) {
+        if (
+            typeof weight !== "number" ||
+            typeof height !== "number"
+        ) {
+            return "Invalid input";
+        } else {
+            let bMI = weight/(height**2);
+            return bMI;
+        }
+    };
+
+    //  Units: Wight = Kg, Height = in.
+
+    console.log(bMIcalculator(120, 5.8));
+    ```
+- **Result**
+    ```Javascript
+    3.56718192627824
+    ```
+## Q7.  Write a program in JavaScript to calculate the area of a circle given its radius value of 10. Use appropriate arithmetic operators.
+- **Code**
+    ```Javascript
+        let circleAreaCalculator = function (r) {
+        if (
+            typeof r !== "number"
+        ) {
+            return "Invalid input";
+        } else {
+            let area = Math.PI * (r**2);
+            return area;
+        }
+    };
+
+    console.log(circleAreaCalculator(120));
+    ```
+- **Result**
+    ```Javascript
+    45238.93421169302
+    ```
