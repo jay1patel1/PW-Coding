@@ -18,16 +18,16 @@ let findvaluepositiveornegative = function (inputvalue) {
     ? value.value > 0
       ? (value.ispositive = true)
       : value.value < 0
-      ? (value.isnegative = true)
-      : (value.iszero = true)
+        ? (value.isnegative = true)
+        : (value.iszero = true)
     : undefined; // No action
+    
   // Print the result
   value.isnumber
     ? console.log(
-        `The given value ${value.value} is ${
-          value.ispositive ? "positive" : ""
-        }${value.isnegative ? "negative" : ""}${value.iszero ? "zero" : ""}`
-      )
+      `The given value ${value.value} is ${value.ispositive ? "positive" : ""
+      }${value.isnegative ? "negative" : ""}${value.iszero ? "zero" : ""}`
+    )
     : console.log("Please enter the number value");
 };
 

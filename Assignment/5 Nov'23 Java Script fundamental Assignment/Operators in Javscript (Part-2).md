@@ -120,5 +120,46 @@
 
 ## Problem statement 4
 ### use ternary operator to check that a person in eligible to vote or not by checking his age. if the age of the person is less that 18 then "You cannot vote" should be logged else "You can vote" should be logged.
-``` javascript
-```
+- **Code**
+    ```javascript
+        const checkVoteEligibility = function (inputAge) {
+        // Declare object for user
+        let userData = {
+            age : inputAge,
+            isAgeNumber : false,
+            isAbleToVote : false
+        }
+
+        // Clean up data
+        typeof userData.age !== "number"
+        ? userData.age = parseInt(userData.age)
+        : undefined
+
+        isNaN (userData.age)
+        ? console.log ("Please enter value in numerical format")
+        : userData.isAgeNumber = true
+
+        // Check Able to vote or not
+        userData.isAgeNumber
+        ? userData.age >= 18
+            ? console.log(`Your age is ${userData.age}, You are able to vote`)
+            : console.log(`Your age is ${userData.age}, You are not able to vote`)
+        : undefined
+    }
+
+      checkVoteEligibility (30);
+      checkVoteEligibility (23);
+      checkVoteEligibility (12);
+      checkVoteEligibility (18);
+      checkVoteEligibility ("12");
+      checkVoteEligibility ("Thirty");
+    ```
+- **Result**
+    ```
+      Your age is 30, You are able to vote
+      Your age is 23, You are able to vote
+      Your age is 12, You are not able to vote
+      Your age is 18, You are able to vote
+      Your age is 12, You are not able to vote
+      Please enter value in numerical format
+    ```
