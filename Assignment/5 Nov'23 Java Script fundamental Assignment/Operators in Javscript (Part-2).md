@@ -66,13 +66,13 @@ let findvaluepositiveornegative = function (inputvalue) {
     iszero: false,
     isnumber: false,
   };
-  
+
   // Check if the input value is a number
   let checkisnumber =
     typeof value.value !== "number"
       ? (value.isnumber = false)
       : (value.isnumber = true);
-  
+
   // Check if the input value is positive, negetive or zero
   let nestedcheck = value.isnumber
     ? value.value > 0
@@ -80,19 +80,22 @@ let findvaluepositiveornegative = function (inputvalue) {
       : value.value < 0
       ? (value.isnegative = true)
       : (value.iszero = true)
-    : console.log("Please enter the number value");
-
+    : undefined; // No action
   // Print the result
-  console.log(
-    `The given value ${value.value} is ${value.ispositive ? "positive" : ""}${
-      value.isnegative ? "negative" : ""
-    }${value.iszero ? "zero" : ""}`
-  );
+  value.isnumber
+    ? console.log(
+        `The given value ${value.value} is ${
+          value.ispositive ? "positive" : ""
+        }${value.isnegative ? "negative" : ""}${value.iszero ? "zero" : ""}`
+      )
+    : console.log("Please enter the number value");
+  ("");
 };
 
 findvaluepositiveornegative(0);
 findvaluepositiveornegative(5);
 findvaluepositiveornegative(-5);
+findvaluepositiveornegative("5");
 ```
 
 ## Problem statement 4
