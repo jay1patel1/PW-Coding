@@ -54,3 +54,13 @@
             console.log(x);
             // answer will be 200 as it is retuning the las operands only.
         ```
+
+## Problem statement 3
+### use a nested ternary operator to check that a number is positive, negative or zero. you have to print "positive" if the number is positive and similarly for negative and zero also.
+``` javascript
+```
+
+## Problem statement 4
+### use ternary operator to check that a person in eligible to vote or not by checking his age. if the age of the person is less that 18 then "You cannot vote" should be logged else "You can vote" should be logged.
+``` javascript
+```
