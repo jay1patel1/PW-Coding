@@ -113,6 +113,16 @@
     // Result : You got an F grade
     ```
 ## Q3. What are loops, and what do we need them? Explain different types of loops with their syntax and examples.
+- **Definition**
+    - Loops are one of the important control structure in javascript. It allow user to do execute block of code repetitively. It is essential do some of the repetitive task. For example user need to console log 1 to 1000. This kind of task easily done by the loops.
+There are three types of loops, as following.
+        1.	“For” loop
+        a.	This is the most used loop in the Javascript. It is used when user exactly know that how many times we want the block of code to repeat. 
+        2.	“While” loop
+        a.	Exact opposite to for loop, it used when user do not know the number of iteration. This code keep executing until given condition is met.
+        3.	“Do while” loop
+        a.	Do while loop is kind of similar to while loop, just difference is in “Do while loop condition will be checked at the last only.” It is useful when user want to execute the code before condition checked. 
+
 ## Q4. Generate numbers between any 2 given numbers.
 ### const num1 = 10;
 ### const num2 = 25;
