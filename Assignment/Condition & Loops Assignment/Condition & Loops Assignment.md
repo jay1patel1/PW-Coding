@@ -126,24 +126,48 @@
         ```
     - **Example**
         ```Javascript
+            //Print Hello world five times.
             for (i=0; i<5; i++) {
                 console.log("Hello world")
             }
+            // Result
+            // Hello world
+            // Hello world
+            // Hello world
+            // Hello world
+            // Hello world
         ```
 
     **2.“While” loop**
     - Exact opposite to for loop, it used when user do not know the number of iteration. This code keep executing until given condition is met.
     - **Syntax**
         ```Javascript
+        while (Condition to be meet) {
+            // Code block  to be exected at each loop
+        };
         ```
     - **Example**
         ```Javascript
+            //Print Hello world five times.
+            let i = 0;
+                while (i<5) {
+                    console.log("Hello world")
+                    i = i+1;
+                };
+            // Result
+            // Hello world
+            // Hello world
+            // Hello world
+            // Hello world
+            // Hello world
         ```
 
      **3.“Do while” loop**
     - Do while loop is kind of similar to while loop, just difference is in “Do while loop condition will be checked at the last only.” It is useful when user want to execute the code before condition checked. 
     - **Syntax**
         ```Javascript
+            //Print Hello world five times.
+            
         ```
     - **Example**
         ```Javascript
