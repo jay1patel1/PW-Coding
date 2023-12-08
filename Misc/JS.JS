@@ -1,40 +1,58 @@
-// Normal Condition syntax
-let userAge = 10;
+let i = 0;
+do {
+    i = i+1;
+    console.log ("Hello World")
+} while (i<5)
 
-if (userAge>18) {
-    console.log("You are able to vote");
-} else {
-    console.log("You are not able to vote");
-}
 
-// Result:
-// You are not able to vote
-
-// **********************************************************
-
-// Switch case syntax
-let userRating = 3;
-
-switch (userRating) {
-    case 1:
-        console.log("Poor Service");
-        break;
-    case 2:
-        console.log("Okay Service");
-        break;
-    case 3:
-        console.log("Good Service");
-        break;
-    case 4:
-        console.log("Best Service");
-        break;
-    case 3:
-        console.log("Nailed it!!!!");
-        break;
-    default:
-        console.log("I don't know the ratings");
-        break;
-}
-
-// Result:
-// Good Service
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// 10
+// 11
+// 12
+// 13
+// 14
+// 15
+// 16
+// 17
+// 18
+// 19
+// 20
+// 21
+// 22
+// 23
+// 24
+// 25
+// descending order
+// 25
+// 24
+// 23
+// 22
+// 21
+// 20
+// 19
+// 18
+// 17
+// 16
+// 15
+// 14
+// 13
+// 12
+// 11
+// 10
+// 9
+// 8
+// 7
+// 6
+// 5
+// 4
+// 3
+// 2
+// 1

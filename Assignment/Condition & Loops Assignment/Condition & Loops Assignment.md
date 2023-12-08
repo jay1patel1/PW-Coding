@@ -117,10 +117,10 @@
     - Loops are one of the important control structure in javascript. It allow user to do execute block of code repetitively. It is essential do some of the repetitive task. For example user need to console log 1 to 1000. This kind of task easily done by the loops. There are three types of loops, as following.
 
     **1.“For” loop**
-    - This is the most used loop in the Javascript. It is used when user exactly know that how many times we want the block of code to repeat.
+    - This is the most used loop in the Javascript. this loop repeats until a specified condition evaluates to false. 
     - **Syntax**
         ```Javascript
-            for (Intial condition; condition; update) {
+            for (initialization; condition; afterthought) {
                 // Code block  to be exected at each loop
             }
         ```
@@ -139,10 +139,10 @@
         ```
 
     **2.“While” loop**
-    - Exact opposite to for loop, it used when user do not know the number of iteration. This code keep executing until given condition is met.
+    - Exact opposite to for loop, a while statement executes its statements as long as a specified condition evaluates to true.
     - **Syntax**
         ```Javascript
-        while (Condition to be meet) {
+        while (condition) {
             // Code block  to be exected at each loop
         };
         ```
@@ -166,11 +166,24 @@
     - Do while loop is kind of similar to while loop, just difference is in “Do while loop condition will be checked at the last only.” It is useful when user want to execute the code before condition checked. 
     - **Syntax**
         ```Javascript
-            //Print Hello world five times.
-            
+            do
+                statement
+            while (condition)
         ```
     - **Example**
         ```Javascript
+            //Print Hello world five times.
+            let i = 0;
+            do {
+                i = i+1;
+                console.log ("Hello World")
+            } while (i<5)
+            // Result
+            // Hello world
+            // Hello world
+            // Hello world
+            // Hello world
+            // Hello world
         ```
 
 ## Q4. Generate numbers between any 2 given numbers.
@@ -179,47 +192,118 @@
 ### Output: 11, 12, 13, ..., 25
 - **Code**
     ``` Javascript
-        let rangecreator = function (start, end) {
-        for (let i = start; i <= end; i++) {
-            console.log(i);
-        }
-        };
+    let rangecreator = function (start, end) {
+    for (let i = start; i <= end; i++) {
+        console.log(i);
+    }
+    };
 
-        rangecreator(1, 10);
-        // Result:
-        // 1
-        // 2
-        // 3
-        // 4
-        // 5
-        // 6
-        // 7
-        // 8
-        // 9
-        // 10
-        rangecreator(25, 33);
-        // Result:
-        // 25
-        // 26
-        // 27
-        // 28
-        // 29
-        // 30
-        // 31
-        // 32
-        // 33
-        rangecreator(5000, 5010);
-        // Result:
-        // 5000
-        // 5001
-        // 5002
-        // 5003
-        // 5004
-        // 5005
-        // 5006
-        // 5007
-        // 5008
-        // 5009
-        // 5010
+    rangecreator(1, 10);
+    // Result:
+    // 1
+    // 2
+    // 3
+    // 4
+    // 5
+    // 6
+    // 7
+    // 8
+    // 9
+    // 10
+    rangecreator(25, 33);
+    // Result:
+    // 25
+    // 26
+    // 27
+    // 28
+    // 29
+    // 30
+    // 31
+    // 32
+    // 33
+    rangecreator(5000, 5010);
+    // Result:
+    // 5000
+    // 5001
+    // 5002
+    // 5003
+    // 5004
+    // 5005
+    // 5006
+    // 5007
+    // 5008
+    // 5009
+    // 5010
     ```
 ## Q5. Use the while loop to print numbers from 1 to 25 in ascending and descending order.
+- **Code**
+    ``` Javascript
+    // ascending order 1 to 25
+    console.log("ascending order");
+    let i = 0
+    while (i<25) {
+        i = i+1;
+        console.log(i);
+    }
+
+    // descending order 25 to 1
+    console.log("descending order");
+    let x = 25
+    while (x>0) {
+        console.log(x);
+        x = x-1;
+    }
+
+    // Result
+    // 1
+    // 2
+    // 3
+    // 4
+    // 5
+    // 6
+    // 7
+    // 8
+    // 9
+    // 10
+    // 11
+    // 12
+    // 13
+    // 14
+    // 15
+    // 16
+    // 17
+    // 18
+    // 19
+    // 20
+    // 21
+    // 22
+    // 23
+    // 24
+    // 25
+    // descending order
+    // 25
+    // 24
+    // 23
+    // 22
+    // 21
+    // 20
+    // 19
+    // 18
+    // 17
+    // 16
+    // 15
+    // 14
+    // 13
+    // 12
+    // 11
+    // 10
+    // 9
+    // 8
+    // 7
+    // 6
+    // 5
+    // 4
+    // 3
+    // 2
+    // 1
+    ```
