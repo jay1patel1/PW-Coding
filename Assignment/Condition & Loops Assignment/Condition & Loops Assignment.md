@@ -120,8 +120,8 @@
     - This is the most used loop in the Javascript. this loop repeats until a specified condition evaluates to false. 
     - **Syntax**
         ```Javascript
-            for (initialization; condition; afterthought) {
-                // Code block  to be exected at each loop
+            for ([InitialExpression/declaration]; [condition]; [Changer]) {
+                // body execution part
             }
         ```
     - **Example**
@@ -143,7 +143,7 @@
     - **Syntax**
         ```Javascript
         while (condition) {
-            // Code block  to be exected at each loop
+            // body execution part
         };
         ```
     - **Example**
@@ -166,9 +166,10 @@
     - Do while loop is kind of similar to while loop, just difference is in “Do while loop condition will be checked at the last only.” It is useful when user want to execute the code before condition checked. 
     - **Syntax**
         ```Javascript
-            do
-                statement
+            do {
+                // body execution part
             while (condition)
+            }
         ```
     - **Example**
         ```Javascript
@@ -176,7 +177,7 @@
             let i = 0;
             do {
                 i = i+1;
-                console.log ("Hello World")
+                console.log ("Hello world")
             } while (i<5)
             // Result
             // Hello world
