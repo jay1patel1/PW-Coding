@@ -1,2 +1,2 @@
-let a = NaN > 0
-console.log(a)
+let a = 50;
+console.log(typeof a);

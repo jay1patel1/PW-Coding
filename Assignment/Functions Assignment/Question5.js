@@ -1,29 +1,43 @@
-function calculateFactorial (n) {
-    let facValue = n
-    let facArray = [];
+let factorialValue = function (n) {
+    let value = n;
 
-    // Check value is number or not:
-    if (n !== 'Number') {
-        let value = parseInt(n);
-        if (value < 0) {
-            console.log("Enter Valid Number");
+    // Value sanity check
+    if (typeof value !== "number") {
+        let convertedValue = parseInt(value);
+        if (isNaN(convertedValue)) {
+            console.log("The entered value is not a number");
             return;
-        } else if ( value >= 0) {
-            facValue = value;
+        } else {
+            value = convertedValue;
         }
-    // Check Value is not negative:
-    if ( n < 0) {
-
     }
 
+    // Check it is positive value
+    if (value < 0) {
+        console.log("The entered Value is smaller than zero");
+        return;
     }
-    // Check value is greater than 0:
-    let zeroCheck = function (x) {
+
+    // Find factorial value
+    let getFact = function (x) {
         if (x === 0) {
-            facArray.push(1);
+            return 1;
+        } else {
+            return x * getFact(x-1);
         }
     }
-    const facCal = function () {
 
-    }
+    console.log(getFact(value));
 }
+
+factorialValue("10");
+// 3628800
+factorialValue(11);
+// 39916800
+factorialValue("Ten");
+// The entered value is not a number
+factorialValue(-10);
+// The entered Value is smaller than zero
+factorialValue("-20")
+// The entered Value is smaller than zero
+
