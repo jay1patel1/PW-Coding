@@ -12,4 +12,4 @@ console.log(valueAdd2)
 const valueAdd3 = twoValueCal(60);
 const valueAdd4 = valueAdd3(90);
 console.log(valueAdd4)
-// Result: 15
+// Result: 150
