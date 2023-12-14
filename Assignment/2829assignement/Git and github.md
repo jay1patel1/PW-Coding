@@ -16,5 +16,10 @@
 ## Q.3 Explain what .gitignore is and why it’s important in version control.
 - If there are any files what are sensitive, or file we do not want to track we can make the .gitignore file and mention the names of the files in it. git will ignore those file completely and will not cover it in the version flow. 
 ## Q.4 Briefly explain what GitHub is and how it facilitates collaboration and version control also name some alternatives to GitHub.
+- Github is the cloud base service provider to host software development project with help of git. It holds all the data on cloud so it can be easily shareable and lot of people can work together on the sing code.
+- **Some Alternative of GitHub**
+    1. Gitlab
+    2. Bit bucket
+    3. AWS CodeCommit
 ## Q.5 Describe the process of contributing to any open-source project on GitHub in a step-by-step manner.
 ## Q.6 Deploy Tailwind projects named Youtube, slack, and Gmail clones on GitHub pages and share the deployed link of those three. Expected output - Live hosted URL Link of your deployed respective website with GitHub pages.
