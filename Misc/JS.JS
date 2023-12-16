@@ -61,3 +61,9 @@ const example = function process(n) {
 }
 
 console.log(example(10));
+
+const example = function process(n) {
+    return n = 1 ? n : process (n)*process (n-1) 
+};
+
+console.log(example (10));

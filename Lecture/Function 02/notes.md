@@ -71,7 +71,7 @@
 - It can help in recursion. in recursion we use fuction name so it is required.
     ```javascript
     const example = function process(n) {
-        n = 1 ? return n : return (process (n)+process (n-1)) 
+        return n = 1 ? n : process (n)+process (n-1) 
     };
     ```
 - It helps to debug the code.
