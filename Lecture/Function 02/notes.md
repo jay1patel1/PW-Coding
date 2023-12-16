@@ -67,3 +67,18 @@
         // Function code
     };
     ```
+## The name is not used is it matter If I do not use the name?
+- It can help in recursion. in recursion we use fuction name so it is required.
+    ```javascript
+    const example = function process(n) {
+        n = 1 ? return n : return (process (n)+process (n-1)) 
+    };
+    ```
+- It helps to debug the code.
+- Code readability.
+
+## Notes on code readability 
+- whenever your write function name person who is reading a code should be able to guess the name of the function. Code readability should be alway priority. Writing clean code is very important. 
+
+## Console.trace
+- console.trace is used when we have to trace the function it is useful when to debug code. 
