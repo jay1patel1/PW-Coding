@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Assignment 1 Q4</title>
+    <style>
+        div.Form {
+            width: 300px;
+            border: 2px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="Form">
+    <div style="text-align: center">
+        <h3> Sign Up </h3>
+    </div>
+    <form action="">
+        <label for="firstName">First Name</label><br>
+        <input minlength="3" name="name" placeholder="Enter Your First Name" required type="text"><br>
+        <label for="lastName">Last Name</label><br>
+        <input minlength="3" name="name" placeholder="Enter Your Last Name" required type="text"><br>
+        <label for="email">Email/label</label><br>
+        <input minlength="3" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="xyz@abc.com"
+               required type="email"><br>
+        <label for="password">Password</label><br>
+        <input name="passwords" placeholder="Password" required type="password"><br>
+        <label for="confirmPassword">Confirm Password</label><br>
+        <input name="passwords" placeholder="Re-Enter Password" required type="password"><br>
+        <label for="age">Age</label><br>
+        <input max="150" min="0" name="age" placeholder="Age" required type="number"><br>
+        <label for="Gender">Gender</label><br>
+        <select name="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select> <br>
+        <input id="agree" name="agree" required type="checkbox">
+        <label for="agree">I agree to the terms and conditions.</label>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>

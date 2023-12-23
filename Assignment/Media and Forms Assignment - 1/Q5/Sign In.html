@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Assignment 1 Q4</title>
+    <style>
+        div.Form {
+            width: 300px;
+            border: 2px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="Form">
+    <div style="text-align: center">
+        <h3> Sign In </h3>
+    </div>
+    <form action="">
+        <label for="email">Email/label</label><br>
+        <label>
+            <input minlength="3" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="xyz@abc.com"
+                   required type="email">
+        </label><br>
+        <label for="password">Password</label><br>
+        <label>
+            <input name="passwords" placeholder="Password" required type="password">
+        </label><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
