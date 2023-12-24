@@ -24,7 +24,7 @@
 - Improved form vaidation, new input types like email, URL,date,paceholder text, and required fields are added in the HTML 5.
 #### 7. Responsive Image:
 - Ensure images adapt to different screen size.
-#### 8. Web Workers:
+#### 8. Web Workers:+
 - Run Javascript code in the background without blocking main threads.
 #### 9. Drag and droop API:
 - Enable drag-and drop functionality.
