@@ -197,7 +197,7 @@ These entities are particularly useful when you want to display special characte
 </html>
 
 ```
-
+![Alt text](image-2.png)
 ---
 
 #### Q6 Creates a simple web page which has a table. The table must have 2 columns HTML and HTML5. The table should include a minimum of three rows describing the differences between HTML and HTML5. 
@@ -262,3 +262,4 @@ These entities are particularly useful when you want to display special characte
 </body>
 </html>
 ```
+![Alt text](image-3.png)
