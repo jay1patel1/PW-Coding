@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS L1 Q2</title>
+    <style>
+        body {
+            background: lightgray;
+        }
+        .loremStory {
+            background: black;
+        }
+        .loremStory--title {
+            color: red;
+        }
+        .loremStory--para {
+            background: darkgray;
+        }
+        .loremStory--para--1 {
+            color: darkmagenta;
+        }
+        .loremSotry--para--2 {
+            color: darkblue;
+        }
+        .loremStory--paraAny--paraTitle {
+            text-decoration-line: underline;
+            font-weight: bolder;
+            font-size: large;
+        }
+        .loremStory--paraAny--paraHighlight {
+            color: crimson;
+            font-weight: bolder;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+<div class="loremStory">
+    <div class="loremStory--title">
+        <h1>Lorem ipsum dolor.</h1>
+    </div>
+    <div class="loremStory--para">
+        <div class="loremStory--para--1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda commodi consequuntur cum eligendi esse est, fugit libero maiores nesciunt nisi numquam obcaecati praesentium recusandae, tempora. Aperiam, consequatur distinctio, eos error fugit illo ipsa maiores neque numquam quae quaerat temporibus ullam! Alias aliquam aliquid aperiam at consectetur culpa cum distinctio dolorum earum est, et fugiat fugit hic illo impedit, ipsa ipsam ipsum iusto laudantium libero minima, mollitia neque nobis nostrum placeat praesentium qui rem sed sit ut veniam vero voluptatem.</p>
+        </div>
+        <div class="loremSotry--para--2">
+            <div class="loremStory--paraAny--paraTitle">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet at atque commodi debitis, deleniti dicta enim ipsum iusto laboriosam minima molestiae necessitatibus nemo, neque nesciunt nihil nisi numquam placeat quasi quidem quis suscipit temporibus totam. Accusamus aliquam aliquid aut commodi dicta dolores est eum ipsa laboriosam, libero magni modi nostrum numquam officiis perferendis quidem quo saepe unde vel velit? Adipisci alias <span class="loremStory--paraAny--paraHighlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, velit.</span> aspernatur atque dolor explicabo facere id magnam mollitia, non quaerat quod repellat saepe sapiente tempore ullam velit, voluptate. Aliquam blanditiis deleniti distinctio dolore libero natus perferendis quidem temporibus!</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

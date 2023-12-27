@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS L1 Q3</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="form">
+    <form action="#" method="post">
+        <div class="form--NameDetail">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name Here" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name Here" required><br><br>
+        </div>
+        <div class="form--contactDetail">
+            <label for="phoneNumber">Phone number</label><br>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]*" title="Please enter only numbers" required>
+        </div>
+        <div class="form--question" style="background-color: #39246750">
+            <p class="form--question--title"> Who will win? </p>
+            <label>
+                <input type="radio" name="electionWinner" value="BJP">
+                BJP
+            </label><br>
+
+            <label>
+                <input type="radio" name="electionWinner" value="Congress">
+                Congress
+            </label><br>
+
+            <label>
+                <input type="radio" name="electionWinner" value="AAP">
+                AAP
+            </label><br>
+        </div>
+        <div class="submitButton">
+            <button type="submit">Submit</button><br>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

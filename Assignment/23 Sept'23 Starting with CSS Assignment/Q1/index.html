@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS L1 Q1</title>
+<!--    THis is an internal CSS style-->
+    <style>
+        * {
+            background-color: #030303;
+        }
+        .internalCSS {
+            color: deeppink;
+        }
+        .combinedCSS {
+            color: #f2f2f2;
+        }
+    </style>
+<!--    This is an external CSS style-->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="inlineCSS" style="color: orange">
+    <h1>Inline CSS Style</h1>
+</div>
+<div class="internalCSS">
+    <h1>Internal CSS Style</h1>
+</div>
+<div class="externalCSS">
+    <h1>External CSS Style</h1>
+</div>
+<div class="combinedCSS" style="color: brown">
+    <h1>Combined CSS Style</h1>
+</div>
+</body>
+</html>
