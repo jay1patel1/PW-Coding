@@ -19,6 +19,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #navbarDiv ul li {
     display: flex;
     justify-content: center;
@@ -34,6 +35,27 @@ body {
     background-color: black;
     cursor: pointer;
     align-items: start;
+}
+
+#li1 {
+    border: 2px solid red;
+}
+
+#li2 {
+    border: 2px dotted orange;
+}
+
+#li3 {
+    border: 2px dashed pink;
+}
+
+#li4 {
+    border: 2px double greenyellow;
+}
+
+#li5 {
+    border: 2px orange;
+    border-style: dotted dashed solid double;
 }
 
 .poster--container {

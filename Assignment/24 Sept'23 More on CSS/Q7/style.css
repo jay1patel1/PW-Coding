@@ -19,7 +19,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 #navbarDiv ul li {
     display: flex;
     justify-content: center;
@@ -37,42 +36,43 @@ body {
     align-items: start;
 }
 
-.content {
-    margin-top: 10px;
+.poster--container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content .content--container {
-    width: 600px;
+.poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 300px;
     height: auto;
-    overflow: hidden;
-    margin: 0;
-    padding: 10px;
-    border: 2px solid white;
+    border: 2px solid red;
+    opacity: 0.2;
 }
 
-.content .content--container .content--image img {
+.poster .poster--image img {
     width: 100%;
+    border-radius: 10px;
     height: auto;
-    display: block;
+    border: 2px solid black;
 }
 
-.content .content--container .content--text p {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+.poster .poster--text {
+    padding: 0;
+    margin: 0;
 }
 
-.content .content--container .content--title p {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    font-size: xx-large;
+.poster .poster--text .poster--text--title {
     font-weight: bold;
-    text-decoration: underline;
 }
 
-.content .content--container .content--text span {
-    font-weight: bold;
+.poster:hover {
+    opacity: 1;
 }

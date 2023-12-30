@@ -1,0 +1,37 @@
+body {
+    background-color: #030303;
+    margin: 0;
+}
+
+#navbarDiv {
+    background-color: lightslategray;
+    height: 50px;
+}
+
+#navbarDiv ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#navbarDiv ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#navbarDiv ul li:hover {
+    background-color: black;
+    cursor: pointer;
+    align-items: start;
+}

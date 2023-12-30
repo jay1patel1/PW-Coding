@@ -36,42 +36,31 @@ body {
     align-items: start;
 }
 
-.poster--container {
+.list {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.poster {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: yellow;
-    padding: 20px;
+    color: white;
     margin-top: 20px;
-    border-radius: 20px;
-    width: 300px;
-    height: auto;
+}
+
+.list .list--container {
     border: 2px solid red;
+    padding: 10px 50px;
 }
 
-.poster .poster--image img {
-    width: 100%;
-    border-radius: 10px;
-    height: auto;
-    border: 2px solid black;
-}
-
-.poster .poster--text {
-    padding: 0;
-    margin: 0;
-}
-
-.poster .poster--text .poster--text--title {
+.list .list--container .list--title {
+    font-size: large;
+    text-align: center;
     font-weight: bold;
+    text-decoration: underline;
 }
 
-.poster:hover {
-    opacity: 0.2;
+.list .list--container .list--li ol li {
+    list-style: lower-roman;
+}
+
+.list .list--container .list--li ol li:hover {
+    color: orange;
+    cursor: pointer;
 }

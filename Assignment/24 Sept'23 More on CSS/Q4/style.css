@@ -19,6 +19,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 #navbarDiv ul li {
     display: flex;
     justify-content: center;
@@ -36,40 +37,32 @@ body {
     align-items: start;
 }
 
-.poster--container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .poster {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: yellow;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 20px;
+}
+
+.poster--image img {
     width: 300px;
-    height: auto;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 30px;
     border: 2px solid red;
 }
 
-.poster .poster--image img {
-    width: 100%;
+.poster--text {
+    width: 200px;
+    height: 80px;
+    border: 2px solid red;
+    background-color: white;
     border-radius: 10px;
-    height: auto;
-    border: 2px solid black;
+    margin-left: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.poster .poster--text {
-    padding: 0;
-    margin: 0;
-}
-
-.poster .poster--text .poster--text--title {
-    font-weight: bold;
-}
 
 
