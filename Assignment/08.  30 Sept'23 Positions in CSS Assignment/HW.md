@@ -93,6 +93,102 @@
 - Relative positioning in CSS is a method that allows you to shift an element's position relative to its default position in the document flow. When you set an element's position to "relative," it remains in the normal document flow, but you can adjust its position using properties like top, bottom, left, and right.
 
 ---
+## Task 3
+### - Code
+#### - HTML
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>HW_08 || Q3 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="text">
+        <div class="title">
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div class="content"><p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae, consequuntur impedit nesciunt nihil
+            quaerat quo ratione voluptate! Consequuntur culpa ea eligendi est fugiat in mollitia, qui quis quos saepe?
+            Eum, nesciunt, veritatis. Adipisci aliquam assumenda consequuntur harum maiores neque nobis optio rem
+            repellendus similique. Accusamus asperiores, dicta dolor eligendi illum in ipsa iusto minus molestiae nisi
+            officia omnis quidem sequi tempore vel veritatis voluptate voluptates. Accusantium animi assumenda
+            blanditiis consequatur consequuntur debitis deleniti, deserunt, doloribus ea fuga fugiat harum id illum in
+            ipsam itaque labore, molestiae natus porro praesentium quas repellendus rerum sapiente sit temporibus
+            voluptatem voluptatibus! Consequuntur doloribus enim facere harum ullam. Deleniti dolore eligendi excepturi
+            magnam veniam. Amet debitis excepturi ipsum necessitatibus officia perspiciatis ut vero! Architecto culpa,
+            fugit hic praesentium quaerat ratione repellendus sint soluta unde. Ab asperiores, dolore earum ipsa minima
+        </p>
+        </div>
+    </div>
+    <div class="image">
+        <img alt="" src="https://picsum.photos/600">
+    </div>
+</div>
+</body>
+</html>
+```
+#### - CSS
+```css
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightslategray;
+}
+
+.container {
+    border: 2px solid white;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: beige;
+}
+
+.text {
+    width: 65%;
+    height: 300px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image {
+    display: inline-block;
+    max-height: 300px;
+    max-width: 35%;
+    margin-left: 10px;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: xx-large;
+    color: black;
+}
+
+.content {
+    font-size: x-large;
+    color: black;
+}
+```
+### - Image
+![img_1.png](img_1.png)
+---
 
 ## Task 2
 ### - Code
