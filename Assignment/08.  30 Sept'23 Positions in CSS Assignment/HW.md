@@ -87,6 +87,11 @@
 
 ## Task 2
 ### Response
+#### Absolute Positioning:
+- Absolute positioning in CSS is a technique used to precisely place an element within a container based on specific coordinates or relative to its closest positioned ancestor. When you set an element's position to "absolute," it's taken out of the normal document flow, meaning it doesn't affect the layout of other elements around it.
+#### Relative Positioning
+- Relative positioning in CSS is a method that allows you to shift an element's position relative to its default position in the document flow. When you set an element's position to "relative," it remains in the normal document flow, but you can adjust its position using properties like top, bottom, left, and right.
+
 ---
 
 ## Task 2
