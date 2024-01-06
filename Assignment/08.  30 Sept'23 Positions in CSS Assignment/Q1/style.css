@@ -1,0 +1,39 @@
+* {
+  background-color: lightslategray;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: mediumseagreen;
+    position: absolute;
+}
+
+.container {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    left: 200px;
+    top: 200px;
+}
+.boxA {
+    left: 30px;
+    top: 30px;
+}
+
+.boxC {
+    left: 60px;
+}
+
+.boxD {
+    top: 60px;
+}
+
+.boxE {
+    left: 60px;
+    top: 60px;
+}
