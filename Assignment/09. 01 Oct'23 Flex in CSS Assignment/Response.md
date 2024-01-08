@@ -100,8 +100,8 @@ These properties collectively allow developers to create flexible and responsive
 ---
 
 ### Q3
-### Response
-#### Html
+### - Response
+#### - Html
 ```html
 <!doctype html>
 <html lang="en">
@@ -122,7 +122,7 @@ These properties collectively allow developers to create flexible and responsive
 </body>
 </html>
 ```
-#### CSS
+#### - CSS
 ```css
 body {
     background-color: lightslategray;
@@ -146,5 +146,5 @@ body {
     width: 200px
 }
 ```
-#### Image
+#### - Image
 ![img.png](img.png)
