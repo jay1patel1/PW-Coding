@@ -96,3 +96,55 @@ In summary, choose Flexbox for one-dimensional layouts and Grid for two-dimensio
     - `wrap-reverse`: Flex items wrap onto multiple lines in the reverse order.
 
 These properties collectively allow developers to create flexible and responsive layouts by controlling the arrangement, alignment, and spacing of items within a flex container. They are crucial for building adaptive and dynamic user interfaces.
+
+---
+
+### Q3
+### Response
+#### Html
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 09 || Q3</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div class="parent">
+    <div class="child">
+
+    </div>
+</div>
+</body>
+</html>
+```
+#### CSS
+```css
+body {
+    background-color: lightslategray;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    border: 2px solid white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child {
+    border: 2px solid red;
+    background-color: white;
+    height: 200px;
+    width: 200px
+}
+```
+#### Image
+![img.png](img.png)
