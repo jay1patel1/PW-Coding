@@ -1,0 +1,150 @@
+body {
+    background-color: darkslategray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.Pricing_Section {
+    display: flex;
+    width: 962px;
+    padding: 32px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background: #F4F2FD;
+}
+
+.PricingCard {
+    display: flex;
+    width: 262px;
+    height: 363px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.CardDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.CardDis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.SubButton {
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #202842;
+}
+.SubButton p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; /* 137.5% */
+}
+.CardHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+.HeaderName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Frame1 {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Frame1 p {
+    color: #202842;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 100% */
+}
+.Frame2 {
+    display: flex;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Frame2 p {
+    color: #202842;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+}
+.prize {
+    display: flex;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.prize p {
+    color: #202842;
+    /*font-family: Sans Serif Collection;*/
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 100% */
+}
+.PlanDetail{
+    display: flex;
+    padding-left: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.group1{
+    width: 95px;
+    height: 28px;
+}
+.Frame3 {
+    display: inline-flex;
+    padding: 3px 4px;
+    align-items: flex-start;
+    gap: 10px;
+}
+.CheckMark{
+    width: 22px;
+    height: 22px;
+    background: url("Image/check-mark 1.svg");
+}
+.Frame4 {
+    display: inline-flex;
+    padding: 8px 8px 4px 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.Frame4 p {
+    color: #202842;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+}
