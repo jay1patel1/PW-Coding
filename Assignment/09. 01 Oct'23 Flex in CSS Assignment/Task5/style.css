@@ -236,3 +236,19 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+.STB {
+    width: 619px;
+    height: 82px;
+    background-color: #01BB0A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 900;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 57px;
+}
