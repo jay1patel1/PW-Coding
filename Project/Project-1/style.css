@@ -32,8 +32,60 @@ body {
 .container {
   margin: 40px 20px;
   display: grid;
-  grid-template-rows: 192px 42px 290px 16px 80px 145px;
+  grid-template-rows: 192px 42px 290px 16px 64px 16px 145px;
   grid-template-columns: 169px 20px 1fr;
   align-items: center;
   justify-content: center;
+}
+
+.container > .coverPhoto,
+.container > .description,
+.container > .education,
+.container > .projects,
+.container > .contacts,
+.container > .experience {
+  height: 100%;
+  border-radius: 5px;
+  
+}
+
+/* Image */
+.coverPhoto {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  background-color: #333;
+}
+
+/* Description */
+.description {
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+}
+
+/* Education*/
+.education {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+  background: #F7F3D7;
+}
+
+/* Projects*/
+.projects {
+  grid-row: 3 / span 3;
+  grid-column: 3 / span 1;
+  background: #F7F6F0;
+}
+
+/* Contacts*/
+.contacts {
+  grid-row: 5 / span 3;
+  grid-column: 1 / span 1;
+  background: #F7F1EB;
+}
+
+/* Experience*/
+.experience {
+  grid-row: 7 / span 1;
+  grid-column: 3 / span 1;
+  background: #F2F5F7;
 }
