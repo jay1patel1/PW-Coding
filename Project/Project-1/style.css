@@ -13,7 +13,7 @@ li {
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  line-height: 1.6;
+  line-height: 1;
   background-color: #333;
   display: flex;
   align-items: center;
@@ -87,10 +87,11 @@ body {
 
 .description .description-Detailed {
   height: 100%;
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
   display: flex;
   align-items: end;
+  line-height: 1.2;
 }
 
 /* Education*/
@@ -98,6 +99,50 @@ body {
   grid-row: 3 / span 1;
   grid-column: 1 / span 1;
   background: #F7F3D7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+.education .content {
+  height: 100%;
+  margin: 16px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.education .content .title {
+  color: #937131;
+  font-size: 18px;
+  font-weight: 700;
+}
+.education .content .details {
+  color: #937131;
+  font-size: 14px;
+  font-weight: 700;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.education .content .details .collage {
+  color: #937131;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.education .content .details .collage .year,
+.education .content .details .collage .c-name {
+  color: #534C40;
+  font-size: 12px;
+  font-weight: 400;
+}
+.education .content .details .collage .degree {
+  color: #534C40;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* Projects*/
@@ -112,6 +157,41 @@ body {
   grid-row: 5 / span 3;
   grid-column: 1 / span 1;
   background: #F7F1EB;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+.contacts .content {
+  height: 100%;
+  margin: 16px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts .content .title {
+  color: #272421;
+  font-size: 18px;
+  font-weight: 700;
+}
+.contacts .content .details {
+  color: #272421;
+  font-size: 14px;
+  font-weight: 700;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts .content .details .obj {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contacts .content .details .obj .det {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 /* Experience*/
