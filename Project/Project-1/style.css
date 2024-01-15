@@ -1,0 +1,39 @@
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Page Formatting */
+.page {
+  width: 595px;
+  height: 842px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+
+.container {
+  margin: 40px 20px;
+  display: grid;
+  grid-template-rows: 192px 42px 290px 16px 80px 145px;
+  grid-template-columns: 169px 20px 1fr;
+  align-items: center;
+  justify-content: center;
+}
