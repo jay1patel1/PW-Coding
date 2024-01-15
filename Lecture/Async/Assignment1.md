@@ -144,3 +144,26 @@ first(second);
 ### Response
 - first
 - second
+
+## Problem 12
+```
+let count = 0;
+setTimeout(() => console.log(count++), 1000);
+setTimeout(() => console.log(count++), 2000);
+setTimeout(() => console.log(count++), 3000);
+```
+### Response
+- 0
+- 1
+- 2
+
+## Problem 13
+```
+for (let i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 1000 * i);
+}
+```
+### Response
+- 0
+- 1
+- 2
