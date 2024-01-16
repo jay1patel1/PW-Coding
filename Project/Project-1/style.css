@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 1000px;
 }
 
 /* Page Formatting */
@@ -44,7 +44,7 @@ body {
 .container > .education,
 .container > .projects,
 .container > .contacts,
-.container > .experience {
+.container > .skills {
   height: 100%;
   border-radius: 5px;
   
@@ -159,7 +159,7 @@ body {
 .projects .content {
   height: 100%;
   margin: 16px;
-  gap: 20px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -167,6 +167,28 @@ body {
   color: #937F31;
   font-size: 18px;
   font-weight: 700;
+}
+
+.projects .content .details {
+  color: #534F40;
+  font-size: 12px;
+  font-weight: 700;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects .content .details .section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.projects .content .details .section .details-content {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.3;
 }
 /* Contacts*/
 .contacts {
@@ -211,8 +233,42 @@ body {
 }
 
 /* Experience*/
-.experience {
+.skills {
   grid-row: 7 / span 1;
   grid-column: 3 / span 1;
   background: #F2F5F7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
 }
+.skills .content {
+  height: 100%;
+  margin: 16px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.skills .content .title {
+  color: #272421;
+  font-size: 18px;
+  font-weight: 700;
+}
+.skills .content .details {
+  color: #272421;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills .content .details .obj {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
