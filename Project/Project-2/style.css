@@ -1,0 +1,177 @@
+:root {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background-image: url("Asset/background-image.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+.outerContainer {
+    width: 100%;
+}
+header {
+    width: 100%;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+.headerLogo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerLogo img {
+    margin: 1rem;
+    width: 15rem;
+}
+.navItem {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    font-size: 2.5rem;
+    justify-content: end;
+    align-items: end;
+    margin: 0;
+    text-transform: uppercase;
+}
+.navSearch {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.navSearch img {
+    height: 4rem;
+}
+.navSearch button {
+    /*height: 4rem;*/
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ec1383;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+}
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-content: end;
+    flex-direction: column;
+}
+.main .mainContent {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    margin-top: 22rem;
+}
+.main .mainContent, .main .buttons, footer .contact {
+    margin-left: 12rem;
+}
+.main .mainContent .mainText {
+    font-size: 8rem;
+    width: 70rem;
+    display: flex;
+    align-content: flex-end;
+}
+.main .mainContent .mainText p {
+    margin: 0;
+    line-height: 1.2;
+}
+.main .mainContent .subtext {
+    font-size: 2.5rem;
+    width: 60rem;
+}
+.main .mainContent .subtext p {
+    margin: 4rem 0;
+    color: #7f7f7f;
+    line-height: 1.5;
+}
+.main .buttons {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 10rem;
+}
+.main .buttons button {
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #ec1383;
+    color: #ffffff;
+}
+.main .buttons .two {
+    background-color: #ffffff;
+    color: #ec1383;
+    border: 1px solid #ec1383;
+}
+footer {
+    display: flex;
+    width: 100%;
+    align-content: center;
+}
+footer .contact {
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+footer .contact img {
+    max-width: 5rem;
+    height: 4rem;
+}
+footer .contact p {
+    font-size: 3rem;
+    line-height: 0;
+}
+.background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+.bgImages {
+    position: absolute;
+    z-index: -3;
+}
+.background .bgImages img{
+    width: 120rem;
+    margin-top: 7rem;
+    margin-left: 70rem;
+}
+.outerBt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: fit-content;
+    padding: 1rem 3rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5rem;
+    background-color: #ffffff;
+    text-transform: capitalize;
+}
+.bt {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.homeLoan {
+    justify-content: right;
+    margin-right: 15rem;
+}
