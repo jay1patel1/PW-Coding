@@ -1,0 +1,75 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, ol, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+.headerBox {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    color: #ffffff;
+    height: 100px;
+}
+
+main {
+    background-color: #313131;
+    height: 1fr;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.above800px {
+    /*display: none;*/
+}
+
+.dis800px {
+    display: none;
+}
+
+.dis600px {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .above800px {
+        display: none;
+    }
+    .dis800px {
+        display: block;
+    }
+    .dis600px {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .above800px {
+        display: none;
+    }
+    .dis800px {
+        display: none;
+    }
+    .dis600px {
+        display: block;
+    }
+}
