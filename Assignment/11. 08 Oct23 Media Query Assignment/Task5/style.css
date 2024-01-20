@@ -1,0 +1,78 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, ol, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #313131;
+    height: 100vh;
+}
+
+/*Box Detailing*/
+.container {
+    background-color: #212121;
+    border: 2px solid #ffffff;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Boxes */
+.box1, .box4 {
+    background-color: black;
+    color: white;
+}
+
+.box2 {
+    background-color: #66cc99;
+    color: black;
+}
+
+.box3 {
+    background-color: #ff9933;
+    color: black;
+}
+
+.box4 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+.box1 {
+    grid-row: 1 / span 2;
+}
+
+/*Media*/
+@media (max-width: 425px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 9fr 1fr;
+    }
+
+    .box4 {
+        grid-column: auto;
+        grid-row: 5;
+    }
+
+    .box1 {
+        grid-row: auto;
+    }
+}
