@@ -1,0 +1,42 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, ol, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #313131;
+    height: 100vh;
+}
+
+.headerBox {
+    width: 100%;
+    display: flex;
+    background-color: #212121;
+    color: #fff;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navtagContain {
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .headerBox {
+        display: inline-block;
+        background-color: darkslategray;
+    }
+    .navtagContain {
+        width: 100%;
+    }
+}
