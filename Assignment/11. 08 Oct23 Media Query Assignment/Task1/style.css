@@ -1,0 +1,27 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, h1, h2, h3, p, ul, ol, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+.headerBox {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightslategray;
+    color: red;
+    height: 100px;
+}
+
+@media (max-width: 600px)  {
+    .headerBox {
+        background-color: blue;
+        color: #fff;
+    }
+}
