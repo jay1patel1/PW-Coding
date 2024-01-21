@@ -1082,3 +1082,50 @@ header {
 .main .top_Section .partneredWith .container .privateBus .boxes .cell:hover {
     background-color: #e3e3e3;
 }
+.main .top_Section .global_presence {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+}
+.main .top_Section .global_presence .container {
+    width: 1285px;
+    position: relative;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.main .top_Section .global_presence .container .label {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0px 0px 40px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+.main .top_Section .global_presence .container .container_L1 {
+    display: flex;
+    justify-content: space-between;
+}
+.main .top_Section .global_presence .container .container_L1 > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.main .top_Section .global_presence .container .container_L1 > .container p {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(29, 29, 29);
+    margin-top: 20px;
+}
+.main .top_Section .global_presence .container .container_L1 > .container img {
+}
+.main .top_Section .global_presence .container .container_L1 > .container:hover {
+    border: 2px solid #f0f0f0;
+}
