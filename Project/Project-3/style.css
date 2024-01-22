@@ -1129,3 +1129,88 @@ header {
 .main .top_Section .global_presence .container .container_L1 > .container:hover {
     border: 2px solid #f0f0f0;
 }
+.main .top_Section .foq {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+}
+.main .top_Section .foq .container {
+    width: 1285px;
+    position: relative;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.main .top_Section .foq .container .label {
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+.main .top_Section .foq .container .tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55%;
+}
+.main .top_Section .foq .container .tabs .tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 0;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+.main .top_Section .foq .container .tabs .tab:hover {
+    border-bottom: 2px solid #4a4a4a;
+}
+.main .top_Section .foq .container .tabs .tab1 {
+    border-bottom: 2px solid #d84e55;
+    color: #d84e55;
+    line-height: 24px;
+    font-weight: 400;
+}
+.main .top_Section .foq .container .questions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.main .top_Section .foq .container .questions .question {
+    padding: 28px 24px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ececec;
+    border-radius: 20px;
+}
+.main .top_Section .foq .container .questions .question p {
+    font-weight: 700;
+}
+.main .goToTopButton {
+    display: flex;
+    justify-content: center;
+}
+.main .goToTopButton .container {
+    width: 1285px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.main .goToTopButton .container .outer {
+    padding: 20px 15px;
+    border: 1px solid #b9b9b9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main .goToTopButton .container a {
+    position: sticky;
+    top: 0;
+}
+.main .goToTopButton .container .outer i {
+    font-size: 20px;
+}
