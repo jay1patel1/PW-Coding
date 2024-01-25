@@ -1,0 +1,50 @@
+![Alt text](image.png)
+
+
+```css
+ul > li > a {
+    color: red;
+}
+
+nav > h2:first-child {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+nav p:first-of-type{
+    color: red;
+}
+
+a[href] {
+    text-decoration: none;
+    color: red;
+}
+a[class="active"] {
+    color: blueviolet;
+    text-decoration: underline;
+}
+a[target="_self"] {
+    background-color: rgb(245, 131, 131);
+    padding: 2px 20px
+}
+
+nav > p:last-child::after {
+    content: "...";
+}
+
+li::marker {
+    color: red;
+}
+
+nav > p:nth-child(4)::first-letter {
+    color: red;
+    font-size: 30px;
+}
+```
