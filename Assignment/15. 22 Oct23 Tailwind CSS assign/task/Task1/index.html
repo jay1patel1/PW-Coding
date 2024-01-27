@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>L15 || Task 1 </title>
     <link rel="stylesheet" href="/task/output.css">
 </head>
-<body class="bg-black">
-    <p class="text-cyan-50">Working</p>
+
+<body class="flex justify-center">
+    <div class="flex justify-center h-dvh size-full">
+        <div class="flex items-center justify-center w-full h-full ml-8 mr-8 lg:flex-row-reverse lg:w-1/2 lg:justify-start lg:ml-0 lg:mr-0">
+            <div class="$DetailsBox$ lg:w-[400px] w-full">
+                <div class="$LoginDetail$ flex flex-col items-center gap-3">
+                    <div class="text-3xl antialiased font-semibold">Login</div>
+                    <div class="text-slate-600">Enter your credential to access your account</div>
+                </div>
+                <div class="$Login_Buttons$ flex justify-center w-full border p-3 mt-7 shadow-md cursor-pointer">
+                    <button class="flex flex-row items-center content-center gap-5">
+                        <img class="w-6" src="google.png" alt="">
+                        <p>Login with Google</p>
+                    </button>
+                </div>
+                <div class="$Seprator$ w-full flex items-center content-center mt-7 mb-7">
+                    <div class="my-4 border-t border-gray-700 grow"></div>
+                    <div class="ml-3 mr-3">Or</div>
+                    <div class="my-4 border-t border-gray-700 grow"></div>
+                </div>
+                <div class="$EmailDetails$ w-full flex-col">
+                    <div class="flex-col w-full mb-5">
+                        <div class="flex justify-between">
+                            <p>Email Address</p>
+                        </div>
+                        <input type="text" placeholder="email@gmail.com"
+                            class="block w-full px-3 py-2 mt-1 bg-white border rounded-md shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 sm:text-sm focus:ring-1">
+                    </div>
+                    <div class="flex-col w-full">
+                        <div class="flex justify-between">
+                            <p>Password</p>
+                            <p class="text-blue-600 cursor-pointer">Forgot Password?</p>
+                        </div>
+                        <input type="password" placeholder="Password"
+                            class="block w-full px-3 py-2 mt-1 bg-white border rounded-md shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 sm:text-sm focus:ring-1">
+                    </div>
+                </div>
+                <div class="$EmailDetails$ w-full flex flex-col items-center">
+                    <button class="w-full p-2 text-white bg-blue-500 rounded mt-7">Login</button>
+                    <p class="mt-4">Don't have an account? <span class="font-semibold cursor-pointer">Register
+                            here</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-row-reverse items-end hidden w-1/2 h-full xl:flex-row lg:flex">
+            <img class="max-w-[400px] xl:ml-28" src="img.jpg" alt="">
+        </div>
+    </div>
 </body>
+
 </html>
