@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./task/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        '4k': '2800px',
+      }
+    },
   },
   plugins: [],
 }
