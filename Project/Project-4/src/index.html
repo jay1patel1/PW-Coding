@@ -19,7 +19,7 @@
     </style>
 </head>
 <body class="w-screen h-screen">
-    <div class="grid grid-cols-[70px,256px,1fr] h-full">
+    <div class="grid grid-cols-[70px,280px,1fr] h-full bg-g_BGGray">
         <div class="separator1 flex flex-col items-center bg-g_LightBlue text-g_fonts">
             <div class="w-[48px] h-[48px] flex justify-center items-center mt-2 mb-2 hover:bg-g_LightBlueSelect rounded-full cursor-pointer">
                 <i class="material-icons">menu</i>
@@ -41,7 +41,7 @@
                 <p class="m-0">Meet</p>
             </div>
         </div>
-        <div class="separator2 px-4 bg-g_BGGray text-g_fonts">
+        <div class="separator2 px-4 text-g_fonts">
             <div class="gmailLogo flex flex-row h-[48px] items-center mt-2.5">
                 <img alt=""
                      class="py-[4px] h-[48px]"
@@ -186,10 +186,39 @@
                         <p class="text-sm">Other</p>
                     </div>
                 </div>
+                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                    <div class="flex items-center gap-5">
+                        <div class="flex justify-center w-7">
+                            <i class="fa-solid fa-chevron-down text-lg"></i>
+                        </div>
+                        <p class="text-sm">More</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="separator3">
-            <p>a</p>
+        <div class="separator3 flex flex-col">
+            <div class="flex flex-row justify-between h-[48px] mt-2.5 pr-3">
+                <div class="w-7/12 max-w-[800px] bg-g_LightBlue rounded-full px-5 flex items-center text-g_fonts gap-3">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                    <input type="text" placeholder="Search in mail" class="grow bg-g_LightBlue outline-none focus:ring-0">
+                    <i class="fa-solid fa-sliders cursor-pointer"></i>
+                </div>
+                <div class="flex flex-row items-center gap-4 cursor-pointer text-g_fonts text-xl">
+                    <div class=" h-full bg-g_LightBlue rounded-full px-5 flex items-center text-g_fonts gap-3 text-sm">
+                        <i class="fa-solid fa-circle text-green-600"></i>
+                        <p class="font-semibold">Active</p>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <i class="fa-regular fa-circle-question"></i>
+                    <i class="fa-solid fa-gear"></i>
+                    <div class="text-xl cursor-pointer">
+                        <img src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="">
+                    </div>
+                    <div class="w-[40px] h-[40px] rounded-full bg-sky-900 text-white flex justify-center items-center text-2xl antialiased">
+                        <p>J</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/dc10f11ad9.js"></script>
