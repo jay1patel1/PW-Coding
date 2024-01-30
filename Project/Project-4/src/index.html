@@ -19,208 +19,218 @@
     </style>
 </head>
 <body class="w-screen h-screen">
-    <div class="grid grid-cols-[70px,280px,1fr] h-full bg-g_BGGray">
-        <div class="separator1 flex flex-col items-center bg-g_LightBlue text-g_fonts">
-            <div class="w-[48px] h-[48px] flex justify-center items-center mt-2 mb-2 hover:bg-g_LightBlueSelect rounded-full cursor-pointer">
-                <i class="material-icons">menu</i>
-            </div>
-            <div class="mail flex flex-col items-center text-sm gap-0 cursor-pointer my-2">
-                <i class="material-icons hover:bg-g_LightBlueSelect px-4 py-1.5 rounded-full m-0">mail</i>
-                <p class="m-0">Mail</p>
-            </div>
-            <div class="mail flex flex-col items-center text-sm gap-0 cursor-pointer my-2">
-                <i class="material-icons hover:bg-g_LightBlueSelect px-4 py-1.5 rounded-full m-0">chat</i>
-                <p class="m-0">Chat</p>
-            </div>
-            <div class="mail flex flex-col items-center text-sm gap-0 cursor-pointer my-2">
-                <i class="material-icons hover:bg-g_LightBlueSelect px-4 py-1.5 rounded-full m-0">groups</i>
-                <p class="m-0">Spaces</p>
-            </div>
-            <div class="mail flex flex-col items-center text-sm gap-0 cursor-pointer my-2">
-                <i class="material-icons hover:bg-g_LightBlueSelect px-4 py-1.5 rounded-full m-0">videocam</i>
-                <p class="m-0">Meet</p>
+<div class="grid grid-cols-[70px,280px,1fr] h-full bg-g_BGGray">
+    <div class="separator1 flex flex-col items-center bg-g_LightBlue text-g_fonts">
+        <div class="w-[48px] h-[48px] flex justify-center items-center mt-2 mb-2 hover:bg-g_LightBlueSelect rounded-full cursor-pointer">
+            <i class="material-icons">menu</i>
+        </div>
+        <div class="mail flex flex-col items-center text-sm gap-0 cursor-pointer my-2">
+            <i class="material-icons hover:bg-g_LightBlueSelect px-4 py-1.5 rounded-full m-0">mail</i>
+            <p class="m-0">Mail</p>
+        </div>
+        <div class="mail flex flex-col items-center text-sm gap-0 cursor-pointer my-2">
+            <i class="material-icons hover:bg-g_LightBlueSelect px-4 py-1.5 rounded-full m-0">chat</i>
+            <p class="m-0">Chat</p>
+        </div>
+        <div class="mail flex flex-col items-center text-sm gap-0 cursor-pointer my-2">
+            <i class="material-icons hover:bg-g_LightBlueSelect px-4 py-1.5 rounded-full m-0">groups</i>
+            <p class="m-0">Spaces</p>
+        </div>
+        <div class="mail flex flex-col items-center text-sm gap-0 cursor-pointer my-2">
+            <i class="material-icons hover:bg-g_LightBlueSelect px-4 py-1.5 rounded-full m-0">videocam</i>
+            <p class="m-0">Meet</p>
+        </div>
+    </div>
+    <div class="separator2 px-4 text-g_fonts">
+        <div class="gmailLogo flex flex-row h-[48px] items-center mt-2.5">
+            <img alt=""
+                 class="py-[4px] h-[48px]"
+                 src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r5.png">
+        </div>
+        <div class="h-[72px] flex items-center my-1 text-g_icon_select">
+            <div class="flex h-[56px] w-[140px] bg-g_BleCompose rounded-2xl hover:shadow-lg items-center m-0">
+                <div class="flex justify-center w-12 h-full items-center">
+                    <i class="material-icons">edit</i>
+                </div>
+                <p class="flex grow h-full items-center">Compose</p>
             </div>
         </div>
-        <div class="separator2 px-4 text-g_fonts">
-            <div class="gmailLogo flex flex-row h-[48px] items-center mt-2.5">
-                <img alt=""
-                     class="py-[4px] h-[48px]"
-                     src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r5.png">
-            </div>
-            <div class="h-[72px] flex items-center my-1 text-g_icon_select">
-                <div class="flex h-[56px] w-[140px] bg-g_BleCompose rounded-2xl hover:shadow-lg items-center m-0">
-                    <div class="flex justify-center w-12 h-full items-center">
-                        <i class="material-icons">edit</i>
-                    </div>
-                    <p class="flex grow h-full items-center">Compose</p>
-                </div>
-            </div>
-            <div class="inbox mt-4">
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
+        <div class="inbox mt-4">
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
                         <i class="fa-solid fa-inbox text-lg"></i>
-                        </div>
-                        <p class="text-sm">Inbox</p>
                     </div>
-                    <div class="">
-                        <p class="text-sm">618</p>
-                    </div>
+                    <p class="text-sm">Inbox</p>
                 </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                        <i class="fa-regular fa-clock text-lg"></i>
-                        </div>
-                        <p class="text-sm">Snoozed</p>
-                    </div>
-                    <div class="">
-                        <p class="text-sm"></p>
-                    </div>
-                </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                        <i class="fa-regular fa-paper-plane text-lg"></i>
-                        </div>
-                        <p class="text-sm">Sent</p>
-                    </div>
-                    <div class="">
-                        <p class="text-sm"></p>
-                    </div>
-                </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                        <i class="fa-regular fa-star text-lg"></i>
-                        </div>
-                        <p class="text-sm">Starred</p>
-                    </div>
-                    <div class="">
-                        <p class="text-sm"></p>
-                    </div>
-                </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                        <i class="fa-solid fa-circle-chevron-right text-lg"></i>
-                        </div>
-                        <p class="text-sm">Important</p>
-                    </div>
-                    <div class="">
-                        <p class="text-sm"></p>
-                    </div>
-                </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                        <i class="fa-solid fa-ban text-lg"></i>
-                        </div>
-                        <p class="text-sm">Spam</p>
-                    </div>
-                    <div class="">
-                        <p class="text-sm"></p>
-                    </div>
-                </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                            <i class="fa-solid fa-trash text-lg"></i>
-                        </div>
-                        <p class="text-sm">Trash</p>
-                    </div>
-                    <div class="">
-                        <p class="text-sm"></p>
-                    </div>
-                </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <p class="text-sm">More</p>
-                    </div>
-                    <div class="">
-                        <p class="text-sm"></p>
-                    </div>
+                <div class="">
+                    <p class="text-sm">618</p>
                 </div>
             </div>
-            <div class="inbox mt-4">
-                <div class="flex justify-between py-1.5 px-5 rounded-full mb-1">
-                    <div class="flex items-center gap-5">
-                        <p class="text-lg font-bold">Labels</p>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-regular fa-clock text-lg"></i>
                     </div>
-                    <div class="h-full flex items-center rounded-full justify-center hover:bg-g_grayHover cursor-pointer p-3">
-                        <i class="fa-solid fa-plus"></i>
-                    </div>
+                    <p class="text-sm">Snoozed</p>
                 </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                            <i class="fa-solid fa-bookmark text-lg text-orange-400"></i>
-                        </div>
-                        <p class="text-sm">Office</p>
-                    </div>
+                <div class="">
+                    <p class="text-sm"></p>
                 </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                            <i class="fa-solid fa-bookmark text-lg text-green-400"></i>
-                        </div>
-                        <p class="text-sm">Home</p>
+            </div>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-regular fa-paper-plane text-lg"></i>
                     </div>
+                    <p class="text-sm">Sent</p>
                 </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                            <i class="fa-solid fa-bookmark text-lg text-pink-400"></i>
-                        </div>
-                        <p class="text-sm">Pw-Class</p>
-                    </div>
+                <div class="">
+                    <p class="text-sm"></p>
                 </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                            <i class="fa-solid fa-bookmark text-lg text-blue-400"></i>
-                        </div>
-                        <p class="text-sm">Other</p>
+            </div>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-regular fa-star text-lg"></i>
                     </div>
+                    <p class="text-sm">Starred</p>
                 </div>
-                <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
-                    <div class="flex items-center gap-5">
-                        <div class="flex justify-center w-7">
-                            <i class="fa-solid fa-chevron-down text-lg"></i>
-                        </div>
-                        <p class="text-sm">More</p>
+                <div class="">
+                    <p class="text-sm"></p>
+                </div>
+            </div>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-solid fa-circle-chevron-right text-lg"></i>
                     </div>
+                    <p class="text-sm">Important</p>
+                </div>
+                <div class="">
+                    <p class="text-sm"></p>
+                </div>
+            </div>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-solid fa-ban text-lg"></i>
+                    </div>
+                    <p class="text-sm">Spam</p>
+                </div>
+                <div class="">
+                    <p class="text-sm"></p>
+                </div>
+            </div>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-solid fa-trash text-lg"></i>
+                    </div>
+                    <p class="text-sm">Trash</p>
+                </div>
+                <div class="">
+                    <p class="text-sm"></p>
+                </div>
+            </div>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <p class="text-sm">More</p>
+                </div>
+                <div class="">
+                    <p class="text-sm"></p>
                 </div>
             </div>
         </div>
-        <div class="separator3 flex flex-col">
-            <div class="flex flex-row justify-between h-[48px] mt-2.5 pr-3">
-                <div class="w-7/12 max-w-[800px] bg-g_LightBlue rounded-full px-5 flex items-center text-g_fonts gap-3">
-                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
-                    <input type="text" placeholder="Search in mail" class="grow bg-g_LightBlue outline-none focus:ring-0">
-                    <i class="fa-solid fa-sliders cursor-pointer"></i>
+        <div class="inbox mt-4">
+            <div class="flex justify-between py-1.5 px-5 rounded-full mb-1">
+                <div class="flex items-center gap-5">
+                    <p class="text-lg font-bold">Labels</p>
                 </div>
-                <div class="flex flex-row items-center gap-4 cursor-pointer text-g_fonts text-xl">
-                    <div class=" h-full bg-g_LightBlue rounded-full px-5 flex items-center text-g_fonts gap-3 text-sm">
-                        <i class="fa-solid fa-circle text-green-600"></i>
-                        <p class="font-semibold">Active</p>
-                        <i class="fa-solid fa-angle-down"></i>
+                <div class="h-full flex items-center rounded-full justify-center hover:bg-g_grayHover cursor-pointer p-3">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-solid fa-bookmark text-lg text-orange-400"></i>
                     </div>
-                    <i class="fa-regular fa-circle-question"></i>
-                    <i class="fa-solid fa-gear"></i>
-                    <div class="text-xl cursor-pointer">
-                        <img src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="">
+                    <p class="text-sm">Office</p>
+                </div>
+            </div>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-solid fa-bookmark text-lg text-green-400"></i>
                     </div>
-                    <div class="w-[40px] h-[40px] rounded-full bg-sky-900 text-white flex justify-center items-center text-2xl antialiased">
-                        <p>J</p>
+                    <p class="text-sm">Home</p>
+                </div>
+            </div>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-solid fa-bookmark text-lg text-pink-400"></i>
                     </div>
+                    <p class="text-sm">Pw-Class</p>
+                </div>
+            </div>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-solid fa-bookmark text-lg text-blue-400"></i>
+                    </div>
+                    <p class="text-sm">Other</p>
+                </div>
+            </div>
+            <div class="flex justify-between py-1.5 px-5 rounded-full hover:bg-g_grayHover cursor-pointer">
+                <div class="flex items-center gap-5">
+                    <div class="flex justify-center w-7">
+                        <i class="fa-solid fa-chevron-down text-lg"></i>
+                    </div>
+                    <p class="text-sm">More</p>
                 </div>
             </div>
         </div>
     </div>
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/dc10f11ad9.js"></script>
+    <div class="separator3 flex flex-col">
+        <div class="flex flex-row justify-between h-[48px] mt-2.5 pr-3">
+            <div class="w-7/12 max-w-[800px] bg-g_LightBlue rounded-full px-5 flex items-center text-g_fonts gap-3">
+                <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                <input class="grow bg-g_LightBlue outline-none focus:ring-0" placeholder="Search in mail" type="text">
+                <i class="fa-solid fa-sliders cursor-pointer"></i>
+            </div>
+            <div class="flex flex-row items-center gap-4 cursor-pointer text-g_fonts text-xl">
+                <div class=" h-full bg-g_LightBlue rounded-full px-5 flex items-center text-g_fonts gap-3 text-sm">
+                    <i class="fa-solid fa-circle text-green-600"></i>
+                    <p class="font-semibold">Active</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <i class="fa-regular fa-circle-question"></i>
+                <i class="fa-solid fa-gear"></i>
+                <div class="text-xl cursor-pointer">
+                    <img alt="" src="https://ssl.gstatic.com/gb/images/bar/al-icon.png">
+                </div>
+                <div class="w-[40px] h-[40px] rounded-full bg-sky-900 text-white flex justify-center items-center text-2xl antialiased">
+                    <p>J</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex h-full my-2">
+        <div class="flex bg-white grow h-full rounded-2xl">
+            <p>a</p>
+        </div>
+        <div class="flex justify-center gap-5 p-2">
+            <div>
+                <img src="&quot;https://www.gstatic.com/companion/icon_assets/calendar_2020q4_2x.png" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/dc10f11ad9.js"></script>
 </body>
 </html>
