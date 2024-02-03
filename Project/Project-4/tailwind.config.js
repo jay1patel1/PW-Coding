@@ -11,6 +11,24 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.mail-styles': {
+          display: 'grid',
+          gridTemplateColumns: 'repeat(6, 30px 1fr 150px)',
+          alignItems: 'center',
+          borderRadius: '0.25rem',
+          borderBottomWidth: '2px',
+          '&:hover': {
+            borderBottomWidth: '2px',
+          },
+          height: '40px',
+        },
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 }
 
