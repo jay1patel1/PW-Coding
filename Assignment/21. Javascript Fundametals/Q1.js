@@ -10,3 +10,5 @@ function outerFunction (parameter) {
 
 let a = outerFunction(10);
 a();
+// This is parameter give - 10
+// This is variable declared - 123
