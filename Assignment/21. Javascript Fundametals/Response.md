@@ -45,7 +45,53 @@ regexChecker(nameEndWith_A, "Ankit", "name what end with 'A'"); // Ankit - is no
 ```
 
 ## Q3. Write a JavaScript program that demonstrates the use of character classes in regular expressions.Create a function that searches for specific character classes in a given string and returns the matches. Test the function with patterns for digits, uppercase letters, lowercase letters, and special characters.
+```javascript
+const string1 = "The value 1 is smaller than 2"
+const string2 = "The Great Himalayas is in India"
+const string3 = "Let's Fly In Sky!!"
+const string4 = "$400 is equal to ₹33205"
+
+const regExDigits = /\d/g;
+const regExUpperCase = /[A-Z]/g;
+const regExLowerCase = /[a-z]/g;
+const regExSpecialChar = /[^a-zA-Z0-9\s]/g;
+
+function checkTheString (string, regex) {
+    const a = string.match(regex);
+    // console.log(a)
+    console.log(`We found total-${a.length} match`)
+    a.forEach((value,index) => {
+        console.log(`${index+1} - ${value}`);
+    })
+};
+
+checkTheString(string1, regExDigits);
+// We found total-2 match
+// 1 - 1
+// 2 - 2
+checkTheString(string2, regExUpperCase);
+// We found total-4 match
+// 1 - T
+// 2 - G
+// 3 - H
+// 4 - I
+checkTheString(string3, regExLowerCase);
+// We found total-8 match
+// 1 - e
+// 2 - t
+// 3 - s
+// 4 - l
+// 5 - y
+// 6 - n
+// 7 - k
+// 8 - y
+checkTheString(string4, regExSpecialChar);
+// We found total-2 match
+// 1 - $
+// 2 - ₹
+```
 
 ## Q4. Create a JavaScript program that takes a regex pattern and a string as input. Write a function that not only checks if there is a match but also extracts specific parts of the matched text using groups. Test the function with patterns that include groups to capture different parts of a date (e.g., day, month, and year) from a given string.
+
 
 ## Q5. You are building a shipping application. Write a program that takes the type of package ("standard","express", or "overnight") and uses a switch statement to calculate and print the estimated delivery time based on the package type. For example, "standard" might take 3-5 days, "express" 1-2 days, and "overnight" would be delivered the next day.
