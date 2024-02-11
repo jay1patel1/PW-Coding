@@ -144,7 +144,7 @@ console.log(ages1.diffMaxAge);
 ___
 
 ## Q3
-### Response for a.
+### Response for (a.)
 ```javascript
 const student = {
     rollNo: 54
@@ -160,4 +160,30 @@ Object.preventExtensions(student)
 student.class = "D";
 console.log(student);
 // { rollNo: 54, standard: 10 }
+```
+
+### Response for (b.)
+```javascript
+const student = {
+    rollNo: 54
+}
+
+let extensibleStatus;
+
+// Addition can be done
+student.standard = 10;
+console.log(student);
+extensibleStatus = Object.isExtensible(student)
+console.log(extensibleStatus)
+// { rollNo: 54, standard: 10 }
+// true
+
+//immutable
+Object.preventExtensions(student)
+extensibleStatus = Object.isExtensible(student)
+student.class = "D";
+console.log(student);
+console.log(extensibleStatus)
+// { rollNo: 54, standard: 10 }
+// false
 ```
