@@ -349,3 +349,24 @@ grade(students,"grade", "B");
 //     { id: 2, firstName: 'Jane', lastName: 'Smith', age: 22, grade: 'B' }
 // ]
 ```
+
+### Response for (f.)
+```javascript
+//Find Student age average
+function ageAverage (array, prop) {
+    if (typeof array[0][prop] === "number"){
+        let sum = array.reduce((acc,cv) => {
+            return (cv.age + acc);
+        },0)
+        const average = sum/array.length;
+        console.log(`Average ${prop} of student is - ${Math.round(average)}`)
+        return average;
+
+    } else {
+        console.log("Given Property is not a number")
+    }
+}
+
+ageAverage(students,"age")
+// Average age of student is - 20
+```
