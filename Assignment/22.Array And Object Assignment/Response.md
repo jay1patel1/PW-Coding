@@ -330,3 +330,18 @@ listStudent(students);
 ```
 
 ### Response for (e.)
+```javascript
+//Find Student by grade
+function grade (array,property,key) {
+    const filterArray = array.filter((student) => {
+        return (student[property] === key);
+    })
+    console.log(filterArray);
+}
+
+grade(students,"grade", "A");
+// [
+//     { id: 1, firstName: 'John', lastName: 'Doe', age: 20, grade: 'A' },
+//     { id: 3, firstName: 'Bob', lastName: 'Johnson', age: 19, grade: 'A' }
+// ]
+```

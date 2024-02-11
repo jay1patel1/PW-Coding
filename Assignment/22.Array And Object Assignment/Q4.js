@@ -74,3 +74,17 @@ listStudent(students);
 // StudentID: 1 || Name: John Doe || Age: 20 || Grade: A
 // StudentID: 2 || Name: Jane Smith || Age: 22 || Grade: B
 // StudentID: 3 || Name: Bob Johnson || Age: 19 || Grade: A
+
+//Find Student by grade
+function grade (array,property,key) {
+    const filterArray = array.filter((student) => {
+        return (student[property] === key);
+    })
+    console.log(filterArray);
+}
+
+grade(students,"grade", "A");
+// [
+//     { id: 1, firstName: 'John', lastName: 'Doe', age: 20, grade: 'A' },
+//     { id: 3, firstName: 'Bob', lastName: 'Johnson', age: 19, grade: 'A' }
+// ]
