@@ -140,3 +140,22 @@ console.log(ages1.diffMinAge);
 console.log(ages1.diffMaxAge);
 // Absolute difference between max-age (26) and average-age (23) is 3 years.
 ```
+
+## Q3
+### a.
+```javascript
+const student = {
+    rollNo: 54
+}
+
+// Addition can be done
+student.standard = 10;
+console.log(student);
+// { rollNo: 54, standard: 10 }
+
+//immutable
+Object.preventExtensions(student)
+student.class = "D";
+console.log(student);
+// { rollNo: 54, standard: 10 }
+```
