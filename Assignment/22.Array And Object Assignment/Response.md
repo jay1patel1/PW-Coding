@@ -144,7 +144,7 @@ console.log(ages1.diffMaxAge);
 ___
 
 ## Q3
-### a.
+### Response for a.
 ```javascript
 const student = {
     rollNo: 54
