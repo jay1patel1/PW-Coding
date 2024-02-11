@@ -62,3 +62,15 @@ console.log(students);
 //     { id: 2, firstName: 'Jane', lastName: 'Smith', age: 22, grade: 'B' },
 //     { id: 3, firstName: 'Bob', lastName: 'Johnson', age: 19, grade: 'A' }
 // ]
+
+// List students
+function listStudent (array) {
+    array.forEach((obj) => {
+        console.log(`StudentID: ${obj.id} || Name: ${obj.firstName} ${obj.lastName} || Age: ${obj.age} || Grade: ${obj.grade}`)
+    })
+}
+
+listStudent(students);
+// StudentID: 1 || Name: John Doe || Age: 20 || Grade: A
+// StudentID: 2 || Name: Jane Smith || Age: 22 || Grade: B
+// StudentID: 3 || Name: Bob Johnson || Age: 19 || Grade: A

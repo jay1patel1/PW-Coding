@@ -316,3 +316,17 @@ console.log(students);
 ```
 
 ### Response for (d.)
+```javascript
+function listStudent (array) {
+    array.forEach((obj) => {
+        console.log(`StudentID: ${obj.id} || Name: ${obj.firstName} ${obj.lastName} || Age: ${obj.age} || Grade: ${obj.grade}`)
+    })
+}
+
+listStudent(students);
+// StudentID: 1 || Name: John Doe || Age: 20 || Grade: A
+// StudentID: 2 || Name: Jane Smith || Age: 22 || Grade: B
+// StudentID: 3 || Name: Bob Johnson || Age: 19 || Grade: A
+```
+
+### Response for (e.)
