@@ -18,4 +18,5 @@ class QuestionBank {
         const newQuestion = new Question(question,option1,option2,option3,option4,correctAnswerIndex);
         this.questionArray.push(newQuestion);
     };
+    
 }
