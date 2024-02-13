@@ -10,13 +10,13 @@
 </head>
 
 <body class="w-dvw h-dvh grid grid-rows-[1fr,10fr] grid-cols-1 font-font1">
-<div class="w-full h-full bg-base-300 flex items-center justify-between px-10">
+<div class="flex items-center justify-between w-full h-full px-10 bg-base-300">
     <div class="flex items-center justify-center">
         <p class="text-2xl text-accent font-font3">Awesome Geo Quizzz... </p>
     </div>
-    <div class="flex h-full items-center justify-between gap-10">
-        <label class="cursor-pointer grid place-items-center">
-            <input class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2" type="checkbox"
+    <div class="flex items-center justify-between h-full gap-10">
+        <label class="grid cursor-pointer place-items-center">
+            <input class="col-span-2 col-start-1 row-start-1 toggle theme-controller bg-base-content" type="checkbox"
                    value="dark"/>
             <svg class="col-start-1 row-start-1 stroke-base-100 fill-base-100" fill="none"
                  height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
@@ -30,53 +30,67 @@
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
         </label>
-        <div class="avatar flex items-center justify-center h-full gap-5">
+        <div class="flex items-center justify-center h-full gap-5 avatar">
             <div class="w-12 mask mask-squircle">
                 <img src="/src/img.png">
             </div>
-            <p class="font-bold text-lg text-accent">Jay Patel</p>
+            <p class="text-lg font-bold text-accent">Jay Patel</p>
         </div>
     </div>
 </div>
-<div class="w-full h-full flex items-center justify-center px-60">
-    <div class="card w-full h-5/6 bg-base-200 shadow-xl flex flex-col justify-between">
-        <div class="w-full h-full flex flex-col items-center justify-between hidden" id="homepage">
-            <div class="w-full flex flex-col justify-center items-center py-12">
+<div class="flex items-center justify-center w-full h-full px-60">
+    <div class="flex flex-col justify-between w-full shadow-xl card h-5/6 bg-base-200">
+        <div class="flex-col items-center justify-between hidden w-full h-full" id="homepage">
+            <div class="flex flex-col items-center justify-center w-full py-12">
                 <h1 class="text-4xl font-bold text-primary"> Welcome to quizzz.... </h1>
-                <p class="text-2xl font-semibold text-secondary w-8/12 text-center py-20">Embark on a thrilling journey
+                <p class="w-8/12 py-20 text-2xl font-semibold text-center text-secondary">Embark on a thrilling journey
                     through global politics: unravel diplomatic dramas, navigate major events, and meet influential
                     figures! Join the excitement!</p>
-                <p class="text-3xl font-semibold text-secondary w-8/12 text-center">Push the button to start</p>
+                <p class="w-8/12 text-3xl font-semibold text-center text-secondary">Push the button to start</p>
             </div>
             <div class="card-body">
-                <div class="card-actions justify-center">
-                    <button class="btn btn-wide btn-accent btn-lg text-white text-2xl" type="submit">Start the
+                <div class="justify-center card-actions">
+                    <button class="text-2xl text-white btn btn-wide btn-accent btn-lg" type="submit">Start the
                         quizzz....
                     </button>
                 </div>
             </div>
         </div>
-        <div class="w-full h-full flex-col items-center justify-center" id="questions">
+        <div class="flex-col items-center justify-center hidden w-full h-full" id="questions">
             <div class="w-full h-[12%] bg-base-300 rounded-b-none flex px-10 items-center justify-between rounded-2xl">
-                <div class="h-full flex justify-center items-center">
-                    <p class="mr-3">Score:</p>
-                    <p>0</p>
+                <div class="flex items-center justify-center h-full">
+                    <p class="mr-3 text-2xl font-semibold">Score:</p>
+                    <p class="text-3xl font-bold">0</p>
+                    <p class="ml-3 text-3xl font-bold text-success">+ 1</p>
+                    <p class="ml-3 text-3xl font-bold text-error">+ 0</p>
                 </div>
-                <div class="h-full flex justify-center items-center">
-                    <p class="mr-3">Correct Ans:</p>
-                    <p>0</p>
+                <div class="flex items-center justify-center h-full">
+                    <p class="mr-3 text-2xl font-semibold">Correct Ans:</p>
+                    <p class="text-3xl font-bold">0</p>
                 </div>
-                <div class="h-full flex justify-center items-center">
-                    <p class="mr-3">Q:</p>
-                    <p>1</p>
-                    <p>/10</p>
+                <div class="flex items-center justify-center h-full">
+                    <p class="mr-3 text-2xl font-semibold">Q:</p>
+                    <p class="text-3xl font-bold">1</p>
+                    <p class="ml-2 text-3xl font-bold">/ 10</p>
                 </div>
             </div>
-            <div class="w-full h-[68%]">
-
+            <div class="w-full h-[68%] grid grid-cols-2 p-8 gap-8">
+                <div class="flex items-center justify-center p-5 text-4xl text-center card bg-base-100">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, dolorem?</p>
+                </div>
+                <div class="card bg-base-100 grid grid-cols-[1fr,8fr] grid-rows-4 p-8">
+                    <input type="radio" id="option1" name="radio-1" value="0" class="self-center justify-self-center radio checked:bg-accent peer/option1" />
+                    <p class="self-center text-2xl peer-checked/option1:text-accent">Option a</p>
+                    <input type="radio" id="option2" name="radio-1" value="1" class="self-center justify-self-center radio checked:bg-accent peer/option2" />
+                    <p class="self-center text-2xl peer-checked/option2:text-accent">Option b</p>
+                    <input type="radio" id="option3" name="radio-1" value="2" class="self-center justify-self-center radio checked:bg-accent peer/option3" />
+                    <p class="self-center text-2xl peer-checked/option3:text-accent">Option c</p>
+                    <input type="radio" id="option4" name="radio-1" value="3" class="self-center justify-self-center radio checked:bg-accent peer/option4" />
+                    <p class="self-center text-2xl peer-checked/option4:text-accent">Option d</p>
+                </div>
             </div>
             <div class="w-full h-[20%] flex justify-end items-center px-10">
-                <button class="btn btn-accent text-white btn-lg" type="submit">Next Question</button>
+                <button class="text-white btn btn-accent btn-lg" type="submit">Next Question</button>
             </div>
         </div>
     </div>
