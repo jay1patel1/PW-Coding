@@ -76,3 +76,43 @@ user1.addQuestion("Which treaty established the principle of collective defense 
 user1.addQuestion("Which international organization is responsible for regulating international trade and resolving disputes between member states?", ["International Monetary Fund", "World Bank", "World Trade Organization", "European Union"], 3);
 
 user1.reset();
+
+const homePage = document.querySelector('#homepage');
+const startButton = document.querySelector('#startButton');
+const questionPage = document.querySelector('#questions');
+const questionTag = document.querySelector('#questionP');
+const optionA = document.querySelector("#optionA");
+const optionB = document.querySelector("#optionB");
+const optionC = document.querySelector("#optionC");
+const optionD = document.querySelector("#optionD");
+const nextQuestion = document.querySelector('#nextQuestion')
+
+function hideHomePage () {
+    homePage.classList.add('hidden');
+    homePage.classList.remove('flex');
+}
+
+function addQuestionPage () {
+    questionPage.classList.remove('hidden');
+    questionPage.classList.add('flex');
+}
+
+function feedQuestionInPage () {
+    let questionObject = user1.fetchQuestion()
+    questionTag.textContent = questionObject.question;
+    optionA.textContent = questionObject.optionArray[0];
+    optionB.textContent = questionObject.optionArray[1];
+    optionC.textContent = questionObject.optionArray[2];
+    optionD.textContent = questionObject.optionArray[3];
+}
+
+startButton.addEventListener('click',() => {
+    hideHomePage();
+    addQuestionPage();
+    user1.reset();
+    feedQuestionInPage();
+});
+
+nextQuestion.addEventListener('click', () => {
+    feedQuestionInPage();
+})

@@ -40,7 +40,7 @@
 </div>
 <div class="flex items-center justify-center w-full h-full px-60">
     <div class="flex flex-col justify-between w-full shadow-xl card h-5/6 bg-base-200">
-        <div class="flex-col items-center justify-between hidden w-full h-full" id="homepage">
+        <div class="flex-col items-center justify-between flex w-full h-full" id="homepage">
             <div class="flex flex-col items-center justify-center w-full py-12">
                 <h1 class="text-4xl font-bold text-primary"> Welcome to quizzz.... </h1>
                 <p class="w-8/12 py-20 text-2xl font-semibold text-center text-secondary">Embark on a thrilling journey
@@ -50,7 +50,7 @@
             </div>
             <div class="card-body">
                 <div class="justify-center card-actions">
-                    <button class="text-2xl text-white btn btn-wide btn-accent btn-lg" type="submit">Start the
+                    <button class="text-2xl text-white btn btn-wide btn-accent btn-lg" type="submit" id="startButton">Start the
                         quizzz....
                     </button>
                 </div>
@@ -76,24 +76,26 @@
             </div>
             <div class="w-full h-[68%] grid grid-cols-2 p-8 gap-8">
                 <div class="flex items-center justify-center p-5 text-4xl text-center card bg-base-100">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, dolorem?</p>
+                    <p id="questionP"></p>
                 </div>
                 <div class="card bg-base-100 grid grid-cols-[1fr,8fr] grid-rows-4 p-8">
                     <input type="radio" id="option1" name="radio-1" value="0" class="self-center justify-self-center radio checked:bg-accent peer/option1" />
-                    <p class="self-center text-2xl peer-checked/option1:text-accent">Option a</p>
+                    <p class="self-center text-2xl peer-checked/option1:text-accent" id="optionA"></p>
                     <input type="radio" id="option2" name="radio-1" value="1" class="self-center justify-self-center radio checked:bg-accent peer/option2" />
-                    <p class="self-center text-2xl peer-checked/option2:text-accent">Option b</p>
+                    <p class="self-center text-2xl peer-checked/option2:text-accent" id="optionB"></p>
                     <input type="radio" id="option3" name="radio-1" value="2" class="self-center justify-self-center radio checked:bg-accent peer/option3" />
-                    <p class="self-center text-2xl peer-checked/option3:text-accent">Option c</p>
+                    <p class="self-center text-2xl peer-checked/option3:text-accent" id="optionC"></p>
                     <input type="radio" id="option4" name="radio-1" value="3" class="self-center justify-self-center radio checked:bg-accent peer/option4" />
-                    <p class="self-center text-2xl peer-checked/option4:text-accent">Option d</p>
+                    <p class="self-center text-2xl peer-checked/option4:text-accent" id="optionD"></p>
                 </div>
             </div>
             <div class="w-full h-[20%] flex justify-end items-center px-10">
-                <button class="text-white btn btn-accent btn-lg" type="submit">Next Question</button>
+                <button class="text-white btn btn-accent btn-lg" type="submit" id="nextQuestion">Next Question</button>
             </div>
         </div>
     </div>
 </div>
+
+<script src="./main.js"></script>
 </body>
 </html>
