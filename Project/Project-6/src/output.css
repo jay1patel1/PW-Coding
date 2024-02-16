@@ -8419,6 +8419,10 @@ details.collapse summary::-webkit-details-marker{
   isolation: auto;
 }
 
+.z-10{
+  z-index: 10;
+}
+
 .col-span-2{
   grid-column: span 2 / span 2;
 }
@@ -8479,6 +8483,10 @@ details.collapse summary::-webkit-details-marker{
   clear: none;
 }
 
+.ml-10{
+  margin-left: 2.5rem;
+}
+
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -8493,6 +8501,18 @@ details.collapse summary::-webkit-details-marker{
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.ml-24{
+  margin-left: 6rem;
+}
+
+.ml-32{
+  margin-left: 8rem;
+}
+
+.ml-40{
+  margin-left: 10rem;
 }
 
 .box-border{

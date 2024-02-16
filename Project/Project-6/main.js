@@ -85,8 +85,19 @@ const optionA = document.querySelector("#optionA");
 const optionB = document.querySelector("#optionB");
 const optionC = document.querySelector("#optionC");
 const optionD = document.querySelector("#optionD");
-const nextQuestion = document.querySelector('#nextQuestion')
-
+const nextQuestion = document.querySelector('#nextQuestion');
+const scoreCount = document.querySelector('#scoreCount');
+let selectedOption;
+const submitAns = document.querySelector('#submitAns');
+const score = document.querySelector('#scoreCount');
+const scorePlus = document.querySelector('#scorePlus');
+const scoreZero = document.querySelector('#scoreZero');
+const correctAnswer = document.querySelector('#correctAnswer');
+const questionCount = document.querySelector('#questionCount');
+const finalPage = document.querySelector('#finalScore');
+const finalPoints = document.querySelector('#finalPoint');
+const finalCorrectAns = document.querySelector('#finalCorrectAns');
+const restartQuiz = document.querySelector('#startButton2');
 function hideHomePage () {
     homePage.classList.add('hidden');
     homePage.classList.remove('flex');
@@ -106,13 +117,87 @@ function feedQuestionInPage () {
     optionD.textContent = questionObject.optionArray[3];
 }
 
+function getOptionResponse () {
+    const selectedOptionFn = parseInt(document.querySelector('input[name="radio-1"]:checked').value);
+    const questionNo = user1.questionCounter-1;
+    const truAnswer = user1.tenRandomQuestion[questionNo-1].correctAns - 1;
+    const isAnswerTrue = selectedOptionFn === truAnswer;
+    return [selectedOptionFn,truAnswer,questionNo,isAnswerTrue];
+}
+
+function submitAnswer () {
+    submitAns.classList.add('hidden');
+    nextQuestion.classList.remove('hidden');
+    let responseArray = getOptionResponse();
+    if (responseArray[3]) {
+        user1.scoreCounter += 5;
+        scorePlus.textContent = "+5";
+        user1.correctAnwsCounter += 1;
+        scorePlus.classList.remove('hidden');
+        setTimeout( () => {
+            scorePlus.classList.add('hidden')
+        }, 1000)
+    }
+    else {
+        scoreZero.textContent = "0"
+        scoreZero.classList.remove('hidden');
+        setTimeout(()=>{
+            scoreZero.classList.add('hidden')
+        },1000)
+    }
+    if (responseArray[2] === 0) {
+        optionA.classList.add('text-success')
+    } else if (responseArray[2] === 1){
+        optionB.classList.add('text-success')
+    } else if (responseArray[2] === 2){
+        optionC.classList.add('text-success')
+    } else if (responseArray[2] === 3){
+        optionD.classList.add('text-success')
+    }
+    score.textContent = user1.scoreCounter;
+    correctAnswer.textContent = user1.correctAnwsCounter;
+    if (user1.questionCounter === 11 ) {
+        questionPage.classList.remove('flex');
+        questionPage.classList.add('hidden');
+        finalCorrectAns.textContent = user1.correctAnwsCounter;
+        finalPoints.textContent = user1.scoreCounter;
+        finalPage.classList.add('flex');
+        finalPage.classList.remove('hidden');
+    }
+}
 startButton.addEventListener('click',() => {
     hideHomePage();
     addQuestionPage();
     user1.reset();
     feedQuestionInPage();
+    score.textContent = user1.scoreCounter;
+    correctAnswer.textContent = user1.correctAnwsCounter;
+    questionCount.textContent = (user1.questionCounter)-1;
 });
+
+submitAns.addEventListener('click', () => {
+    submitAnswer();
+})
 
 nextQuestion.addEventListener('click', () => {
     feedQuestionInPage();
+    submitAns.classList.remove('hidden');
+    nextQuestion.classList.add('hidden');
+    questionCount.textContent = (user1.questionCounter)-1;
+    optionA.classList.remove('text-success');
+    optionB.classList.remove('text-success');
+    optionC.classList.remove('text-success');
+    optionD.classList.remove('text-success');
 })
+
+restartQuiz.addEventListener('click',() => {
+    hideHomePage();
+    addQuestionPage();
+    user1.reset();
+    feedQuestionInPage();
+    score.textContent = user1.scoreCounter;
+    correctAnswer.textContent = user1.correctAnwsCounter;
+    questionCount.textContent = (user1.questionCounter)-1;
+    finalPage.classList.add('hidden');
+    finalPage.classList.remove('flex');
+});
