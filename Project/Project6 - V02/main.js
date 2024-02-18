@@ -327,8 +327,8 @@ function nextQuestion () {
 }
 
 function restartQuiz() {
-    user.shuffleQuestion();
-    refreshPage();
+    questionPage.classList.add("flex");
+    questionPage.classList.remove("hidden");
     endPage.classList.add("hidden");
     endPage.classList.remove("flex");
     user.currentQuestionNo = 0;
@@ -337,8 +337,8 @@ function restartQuiz() {
     user.pendingQuestion = 10;
     user.givenAnswer = undefined;
     user.isCAnswerTrue = null;
-    questionPage.classList.remove("hidden");
-    questionPage.classList.add("flex");
+    user.shuffleQuestion();
+    refreshPage();
 }
 
 startButton.addEventListener("click", () => {
