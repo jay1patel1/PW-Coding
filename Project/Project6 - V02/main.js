@@ -142,6 +142,10 @@ class Methods {
         return this.randomtenArray[this.currentQuestionNo].rArray[3];
     }
 
+    get cAnsIndex () {
+        return this.randomtenArray[this.currentQuestionNo].rightAnswerIndex;
+    }
+
     get rAns() {
         return this.randomtenArray[this.currentQuestionNo].rightAnswerIndex;
     }
@@ -181,6 +185,9 @@ const option4 = document.getElementById('option4');
 const submitButton = document.getElementById('Submit_button');
 const nextButton = document.getElementById('Next_button');
 const endPage = document.getElementById('page-End');
+const finalScore = document.getElementById('finalScore');
+const finalCorrectAns = document.getElementById('finalCorrectAns');
+const restartPage = document.getElementById('restart')
 
 function refreshPage() {
     questionNumber.innerText = (user.currentQuestionNo) + 1;
@@ -252,10 +259,86 @@ function submit () {
         option3.classList.add("pointer-events-none");
         option4.classList.add("pointer-events-none");
     }
+
+    if (user.cAnsIndex === 0) {
+        option1.classList.add("ring-4","ring-green-500","ring-inset");
+        option2.classList.add("ring-4","ring-red-500","ring-inset");
+        option3.classList.add("ring-4","ring-red-500","ring-inset");
+        option4.classList.add("ring-4","ring-red-500","ring-inset");
+    } else if (user.cAnsIndex === 1) {
+        option2.classList.add("ring-4","ring-green-500","ring-inset");
+        option1.classList.add("ring-4","ring-red-500","ring-inset");
+        option3.classList.add("ring-4","ring-red-500","ring-inset");
+        option4.classList.add("ring-4","ring-red-500","ring-inset");
+    } else if (user.cAnsIndex === 2) {
+        option3.classList.add("ring-4","ring-green-500","ring-inset");
+        option1.classList.add("ring-4","ring-red-500","ring-inset");
+        option2.classList.add("ring-4","ring-red-500","ring-inset");
+        option4.classList.add("ring-4","ring-red-500","ring-inset");
+    } else if (user.cAnsIndex === 3) {
+        option4.classList.add("ring-4","ring-green-500","ring-inset");
+        option1.classList.add("ring-4","ring-red-500","ring-inset");
+        option3.classList.add("ring-4","ring-red-500","ring-inset");
+        option2.classList.add("ring-4","ring-red-500","ring-inset");
+    }
+
+    if (user.isCAnswerTrue) {
+        user.point += 5;
+        user.rightAnswerCount += 1;
+    }
+
+    refreshPage();
 }
 
-function updateDataAfterSubmit () {
+function nextQuestion () {
+    user.currentQuestionNo += 1;
+    user.givenAnswer = undefined;
+    user.isCAnswerTrue = null;
+    option1.classList.remove("ring-4","ring-green-500","ring-inset","ring-red-500");
+    option2.classList.remove("ring-4","ring-green-500","ring-inset","ring-red-500");
+    option3.classList.remove("ring-4","ring-green-500","ring-inset","ring-red-500");
+    option4.classList.remove("ring-4","ring-green-500","ring-inset","ring-red-500");
+    option1.classList.remove("pointer-events-none");
+    option2.classList.remove("pointer-events-none");
+    option3.classList.remove("pointer-events-none");
+    option4.classList.remove("pointer-events-none");
+    submitButton.classList.add("flex");
+    submitButton.classList.remove("hidden");
+    nextButton.classList.add("hidden");
+    nextButton.classList.remove("flex");
+    option1.classList.remove("bg-orange-300");
+    option2.classList.remove("bg-orange-300");
+    option3.classList.remove("bg-orange-300");
+    option4.classList.remove("bg-orange-300");
+    option1.classList.add("bg-blue-500");
+    option2.classList.add("bg-blue-500");
+    option3.classList.add("bg-blue-500");
+    option4.classList.add("bg-blue-500");
+    if (user.currentQuestionNo < 10) {
+        refreshPage();
+    } else {
+        questionPage.classList.remove("flex");
+        questionPage.classList.add("hidden");
+        endPage.classList.remove("hidden");
+        endPage.classList.add("flex");
+        finalScore.innerText = user.point;
+        finalCorrectAns.innerText = user.rightAnswerCount;
+    }
+}
 
+function restartQuiz() {
+    user.shuffleQuestion();
+    refreshPage();
+    endPage.classList.add("hidden");
+    endPage.classList.remove("flex");
+    user.currentQuestionNo = 0;
+    user.point = 0;
+    user.rightAnswerCount = 0;
+    user.pendingQuestion = 10;
+    user.givenAnswer = undefined;
+    user.isCAnswerTrue = null;
+    questionPage.classList.remove("hidden");
+    questionPage.classList.add("flex");
 }
 
 startButton.addEventListener("click", () => {
@@ -281,4 +364,12 @@ option4.addEventListener("click", () => {
 
 submitButton.addEventListener("click", () => {
     submit ()
+})
+
+nextButton.addEventListener("click",() => {
+    nextQuestion()
+})
+
+restartPage.addEventListener("click",() => {
+    restartQuiz()
 })
